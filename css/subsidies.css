@@ -1,0 +1,756 @@
+/* Central & Gujarat Subsidy pages */
+
+.sub-hero .about-inner-hero-visual {
+  position: relative;
+}
+
+.sub-floating-tags {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sub-floating-tags span {
+  background: rgba(255, 255, 255, 0.95);
+  color: #14213D;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sub-strip {
+  background: #14213D;
+  padding: 0;
+  margin-top: -1px;
+}
+
+.sub-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.sub-strip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 28px 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.sub-strip-item:last-child {
+  border-right: none;
+}
+
+.sub-strip-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.sub-strip-item strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.sub-strip-item span {
+  font-size: 12px;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+/* Intro */
+.sub-intro-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sub-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.sub-intro-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.sub-intro-card {
+  background: #f8f9fb;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sub-intro-card strong {
+  display: block;
+  color: #14213D;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.sub-intro-card span {
+  font-size: 12px;
+  color: #5a6270;
+}
+
+.sub-process-diagram {
+  background: linear-gradient(135deg, #f4faff 0%, #f5fbf7 100%);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sub-process-step-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #14213D;
+  border: 1px solid #e8ecf0;
+}
+
+.sub-process-step-item::before {
+  content: "→";
+  color: #1E73BE;
+  font-weight: 700;
+}
+
+/* Scheme cards grid */
+.sub-schemes-section {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+.sub-schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.sub-scheme-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-scheme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(30, 115, 190, 0.12);
+  border-color: #1E73BE;
+}
+
+.sub-scheme-card--gujarat:hover {
+  border-color: #0D8B8B;
+}
+
+.sub-scheme-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  width: fit-content;
+}
+
+.sub-scheme-badge--central {
+  background: rgba(30, 115, 190, 0.12);
+  color: #1E73BE;
+}
+
+.sub-scheme-badge--gujarat {
+  background: rgba(13, 139, 139, 0.12);
+  color: #0D8B8B;
+}
+
+.sub-scheme-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #14213D;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.sub-scheme-best {
+  font-size: 13px;
+  color: #1E73BE;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.sub-scheme-card--gujarat .sub-scheme-best {
+  color: #0D8B8B;
+}
+
+.sub-scheme-card p {
+  font-size: 14px;
+  color: #5a6270;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.sub-scheme-cta {
+  color: #F28C28;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.sub-scheme-card:hover .sub-scheme-cta {
+  transform: translateX(4px);
+}
+
+/* Accordion section */
+.sub-accordion-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sub-accordion-list {
+  margin-top: 40px;
+  max-width: 900px;
+}
+
+.sub-accordion-item {
+  border: 1px solid #e8ecf0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.sub-accordion-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  background: #fff;
+  font-weight: 600;
+  color: #14213D;
+  font-size: 15px;
+  gap: 16px;
+}
+
+.sub-accordion-toggle:hover {
+  background: #f8f9fb;
+}
+
+.sub-accordion-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.sub-accordion-icon::before,
+.sub-accordion-icon::after {
+  content: "";
+  position: absolute;
+  background: #1E73BE;
+  border-radius: 2px;
+}
+
+.sub-accordion-icon::before {
+  width: 14px;
+  height: 2px;
+  top: 9px;
+  left: 3px;
+}
+
+.sub-accordion-icon::after {
+  width: 2px;
+  height: 14px;
+  top: 3px;
+  left: 9px;
+  transition: transform 0.2s;
+}
+
+.sub-accordion-item.w--open .sub-accordion-icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.sub-accordion-body {
+  display: none;
+  padding: 0 24px 20px;
+  font-size: 14px;
+  color: #5a6270;
+  line-height: 1.7;
+}
+
+.sub-accordion-item.w--open .sub-accordion-body {
+  display: block;
+}
+
+/* Highlight sections */
+.sub-highlight-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fff7ef 0%, #f5fbf7 100%);
+}
+
+.sub-highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.sub-highlight-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sub-highlight-list li {
+  padding: 8px 0 8px 24px;
+  position: relative;
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.sub-highlight-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #82B440;
+  font-weight: 700;
+}
+
+.sub-good-for {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* MSME definition cards */
+.sub-msme-def-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.sub-msme-def-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  border-top: 3px solid #0D8B8B;
+}
+
+.sub-msme-def-card h4 {
+  font-size: 16px;
+  color: #14213D;
+  margin-bottom: 10px;
+}
+
+.sub-msme-def-card p {
+  font-size: 13px;
+  color: #5a6270;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Large unit cards */
+.sub-large-unit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.sub-large-unit-card {
+  background: linear-gradient(135deg, #1E73BE 0%, #0D8B8B 100%);
+  border-radius: 16px;
+  padding: 32px 24px;
+  color: #fff;
+}
+
+.sub-large-unit-card h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.sub-large-unit-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Textile section */
+.sub-textile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.sub-textile-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 28px;
+  border-left: 4px solid #F28C28;
+}
+
+.sub-textile-card h4 {
+  font-size: 16px;
+  color: #14213D;
+  margin-bottom: 12px;
+}
+
+.sub-textile-card p {
+  font-size: 14px;
+  color: #5a6270;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sub-support-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.sub-support-icon {
+  background: #f8f9fb;
+  border: 1px solid #e8ecf0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #14213D;
+}
+
+/* Logistic park */
+.sub-logistic-section {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+.sub-logistic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.sub-benefit-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.sub-benefit-badge {
+  background: rgba(30, 115, 190, 0.1);
+  color: #1E73BE;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* Policy cards row */
+.sub-policy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.sub-policy-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.sub-policy-card h4 {
+  font-size: 15px;
+  color: #14213D;
+  margin-bottom: 10px;
+}
+
+.sub-policy-card p {
+  font-size: 13px;
+  color: #5a6270;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Who can benefit */
+.sub-audience-section {
+  padding: 80px 0;
+}
+
+.sub-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.sub-audience-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 28px 24px;
+  border-top: 3px solid #1E73BE;
+}
+
+.sub-audience-card--gujarat {
+  border-top-color: #0D8B8B;
+}
+
+.sub-audience-card h3 {
+  font-size: 17px;
+  color: #14213D;
+  margin-bottom: 10px;
+}
+
+.sub-audience-card p {
+  font-size: 14px;
+  color: #5a6270;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Process */
+.sub-process-section {
+  background: #14213D;
+  padding: 80px 0;
+}
+
+.sub-process-section .section-heading,
+.sub-process-section .pill-button {
+  color: #fff;
+}
+
+.sub-process-section .about-process-step {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.sub-process-section .about-process-step h3,
+.sub-process-section .about-process-step p {
+  color: #fff;
+}
+
+.sub-process-section .about-process-num {
+  color: #F28C28;
+}
+
+/* Documents */
+.sub-docs-section {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+.sub-docs-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px;
+  border: 1px solid #e8ecf0;
+}
+
+.sub-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin: 32px 0 24px;
+}
+
+.sub-doc-item {
+  background: #f8f9fb;
+  border-radius: 10px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.sub-doc-item strong {
+  display: block;
+  color: #14213D;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.sub-doc-item span {
+  font-size: 12px;
+  color: #5a6270;
+  line-height: 1.5;
+}
+
+.sub-disclaimer {
+  font-size: 13px;
+  color: #8a919c;
+  font-style: italic;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #e8ecf0;
+}
+
+/* Why choose */
+.sub-trust-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sub-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.sub-trust-card {
+  background: #f8f9fb;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.sub-trust-card strong {
+  display: block;
+  color: #14213D;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.sub-trust-card p {
+  font-size: 12px;
+  color: #5a6270;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* FAQ */
+.sub-faq-section {
+  padding: 80px 0;
+  background: #f4faff;
+}
+
+/* CTA phone */
+.sub-cta-phone {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sub-cta-phone a {
+  color: #F28C28;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .sub-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-strip-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .sub-intro-grid,
+  .sub-highlight-grid,
+  .sub-logistic-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .sub-schemes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-msme-def-grid,
+  .sub-large-unit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-textile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-policy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-docs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .sub-strip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-strip-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .sub-schemes-grid,
+  .sub-audience-grid,
+  .sub-intro-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-policy-grid,
+  .sub-trust-grid,
+  .sub-docs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-docs-card {
+    padding: 28px 20px;
+  }
+}
