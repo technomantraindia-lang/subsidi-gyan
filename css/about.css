@@ -4,12 +4,43 @@
 .about-inner-hero {
   padding-top: 140px;
   padding-bottom: 90px;
-  background-color: #ffffff;
+  background: radial-gradient(circle at 10% 20%, rgba(244, 250, 255, 0.95) 0%, rgba(245, 251, 247, 0.9) 50%, rgba(255, 255, 255, 1) 100%);
   border-bottom: 1px solid rgba(12, 43, 33, 0.05);
   position: relative;
+  overflow: hidden;
+}
+
+.about-inner-hero::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(13, 139, 139, 0.08) 0%, rgba(13, 139, 139, 0) 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-inner-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(242, 140, 40, 0.06) 0%, rgba(242, 140, 40, 0) 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .about-inner-hero-grid {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 60px;
