@@ -6,9 +6,9 @@ with open(f"{base}/index.html", encoding="utf-8") as f:
     index = f.read()
 
 header_m = re.search(r'<section class="header">.*?</section>', index, re.DOTALL)
-footer_m = re.search(r'<section class="footer">.*?</section>', index, re.DOTALL)
-header = header_m.group(0)
-footer = footer_m.group(0)
+footer_m = re.search(r'<section class="footer".*?</section>', index, re.DOTALL)
+header = header_m.group(0) if header_m else ""
+footer = footer_m.group(0) if footer_m else ""
 
 
 def fix_header(header, active_page):
