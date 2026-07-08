@@ -79,7 +79,7 @@ def head(title, description):
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="css/style.css" rel="stylesheet"/>
   <link href="css/custom.css" rel="stylesheet"/>
-  <link href="css/about.css" rel="stylesheet"/>
+  <link href="css/about.css?v=1.1" rel="stylesheet"/>
   <link href="css/subsidies.css" rel="stylesheet"/>
 </head>
 <body>
