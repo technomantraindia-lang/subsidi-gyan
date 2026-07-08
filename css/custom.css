@@ -405,10 +405,10 @@
 .impact-collage-grid {
   display: grid;
   grid-template-columns: 1fr 1.3fr 1fr;
-  grid-template-rows: 100px 180px 120px;
-  grid-gap: 16px;
+  grid-template-rows: 140px 240px 160px;
+  grid-gap: 20px;
   align-items: stretch;
-  max-width: 480px;
+  max-width: 650px;
   margin-left: auto;
   padding: 20px 0;
 }
@@ -433,8 +433,8 @@
   grid-row: 1;
   background-color: #00B562;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 170px;
+  height: 170px;
   margin-left: auto;
   align-self: center;
 }
@@ -474,8 +474,8 @@
   grid-row: 3;
   background-color: #FFC83B;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 170px;
+  height: 170px;
   align-self: center;
 }
 
@@ -913,6 +913,29 @@
   .about-left-visual {
     height: 380px;
   }
+}
+
+@media screen and (max-width: 479px) {
+  .brand-byline {
+    font-size: 0.65rem !important;
+  }
+}
+
+/* Allow Subsidy Scheme images to display fully without cropping */
+.project-image-block {
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+}
+
+.project-tab-image {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 15px !important; /* Keep the rounded corners */
 }
 
 @media screen and (max-width: 767px) {
