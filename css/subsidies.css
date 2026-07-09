@@ -1,5 +1,13 @@
 /* Central & Gujarat Subsidy pages */
 
+/* Force-hide accordion bodies by default (override Webflow CDN default display:block) */
+.sub-accordion-body.w-dropdown-list {
+  display: none !important;
+}
+.sub-accordion-item.w--open .sub-accordion-body.w-dropdown-list {
+  display: block !important;
+}
+
 .sub-hero .about-inner-hero-visual {
   position: relative;
 }

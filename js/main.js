@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
   initScrollAnimations();
   initSmoothScroll();
+  initActiveNavHighlight();
 });
 
 function initMobileNav() {
@@ -33,7 +34,26 @@ function initDropdowns() {
     const toggle = dropdown.querySelector('.w-dropdown-toggle');
     if (!toggle) return;
 
+    // Hover logic
+    if (dropdown.getAttribute('data-hover') === 'true') {
+      dropdown.addEventListener('mouseenter', () => {
+        if (window.innerWidth >= 992) {
+          dropdown.classList.add('w--open');
+        }
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        if (window.innerWidth >= 992) {
+          dropdown.classList.remove('w--open');
+        }
+      });
+    }
+
+    // Click logic
     toggle.addEventListener('click', (e) => {
+      // Allow navigation if clicking a specific link or element with onclick inside the toggle
+      if (e.target.tagName.toLowerCase() === 'a' || e.target.hasAttribute('onclick')) {
+        return; // do not prevent default, let navigation happen
+      }
       e.preventDefault();
       e.stopPropagation();
       const isOpen = dropdown.classList.contains('w--open');
@@ -235,15 +255,73 @@ function initScrollAnimations() {
 
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    const id = link.getAttribute('href');
+    if (!id || id === '#') return;
+    const target = document.querySelector(id);
+    if (!target) return;
     link.addEventListener('click', (e) => {
-      const id = link.getAttribute('href');
-      if (!id || id === '#') return;
-      const target = document.querySelector(id);
-      if (!target) return;
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       document.querySelector('.navbar')?.classList.remove('w--nav-menu-open');
       document.querySelector('.w-nav-button')?.classList.remove('w--open');
     });
   });
+}
+
+function initActiveNavHighlight() {
+  const currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0] || 'index.html';
+  
+  // Reset all active classes
+  document.querySelectorAll('.menu-link').forEach(link => {
+    link.classList.remove('w--current');
+  });
+  document.querySelectorAll('.dropdown-link').forEach(link => {
+    link.classList.remove('w--current');
+  });
+
+  // 1. Exact match for standard links (Home, About, Industries, Articles, Contact)
+  document.querySelectorAll('.menu-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && (href === currentPath || (currentPath === '' && href === 'index.html'))) {
+      link.classList.add('w--current');
+    }
+  });
+
+  // 2. Dropdown Toggle Highlights
+  // Services
+  if (currentPath === 'services.html') {
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      const toggle = dropdown.querySelector('.menu-link.dropdown');
+      if (toggle && toggle.textContent.trim().toLowerCase() === 'services') {
+        toggle.classList.add('w--current');
+      }
+    });
+  }
+
+  // Subsidies
+  if (currentPath === 'central-subsidies.html' || currentPath === 'gujarat-subsidies.html') {
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      const toggle = dropdown.querySelector('.menu-link.dropdown');
+      if (toggle && toggle.textContent.trim().toLowerCase() === 'subsidies') {
+        toggle.classList.add('w--current');
+      }
+    });
+
+    // Highlight the specific dropdown item
+    document.querySelectorAll('.dropdown-link').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href === currentPath) {
+        link.classList.add('w--current');
+      }
+    });
+  }
+
+  // 3. Subpage mappings (Article detail page highlights "Articles")
+  if (currentPath === 'article-detail.html') {
+    document.querySelectorAll('.menu-link').forEach(link => {
+      if (link.getAttribute('href') === 'articles.html') {
+        link.classList.add('w--current');
+      }
+    });
+  }
 }

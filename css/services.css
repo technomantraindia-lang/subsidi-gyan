@@ -1,3 +1,18 @@
+/* Custom services page styles */
+
+/* Fix readability for Our Services heading block */
+.heading-block.is-service .section-heading.is-service {
+    color: #14213D !important;
+}
+.heading-block.is-service .pill-button.is-service {
+    color: #14213D !important;
+    border-color: #CBD5E1 !important;
+}
+.heading-block.is-service .section-intro-text {
+    color: #475569 !important;
+}
+
+
 /* Services page */
 
 .svc-hero .about-inner-hero-visual {

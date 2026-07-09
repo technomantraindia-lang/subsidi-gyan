@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Manage Articles | Subsidy Gyaan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/custom.css" rel="stylesheet"/>
+  <style>
+    .admin-dashboard-hero {
+      padding: 60px 0 30px;
+      background-color: #0f172a;
+      color: white;
+    }
+    .admin-dashboard-hero h1 {
+      font-size: 32px;
+      margin: 0 0 10px;
+      color: white;
+    }
+    .admin-dashboard-hero p {
+      color: #94a3b8;
+      font-size: 16px;
+      margin: 0;
+    }
+    .admin-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media screen and (min-width: 991px) {
+      .admin-container {
+        grid-template-columns: 1.5fr 1fr;
+      }
+    }
+    .admin-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .admin-card h2 {
+      font-size: 20px;
+      color: #0f172a;
+      margin: 0 0 20px;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 12px;
+      font-weight: 600;
+    }
+    .file-status-banner {
+      background: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .file-status-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .status-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ef4444;
+    }
+    .status-indicator.connected {
+      background: #22c55e;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      color: #334155;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .form-control {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-family: inherit;
+      color: #0f172a;
+      background-color: #fff;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: #0d8b8b;
+      box-shadow: 0 0 0 3px rgba(13,139,139,0.15);
+    }
+    .btn-connect {
+      background-color: #0d8b8b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-connect:hover {
+      background-color: #0b7373;
+    }
+    .btn-submit {
+      background-color: #f28c28;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    .btn-submit:hover {
+      background-color: #db7614;
+    }
+    .articles-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-height: 700px;
+      overflow-y: auto;
+      padding-right: 5px;
+    }
+    .article-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background-color: #f8fafc;
+      gap: 15px;
+    }
+    .article-info h3 {
+      font-size: 15px;
+      color: #0f172a;
+      margin: 0 0 4px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .article-info p {
+      font-size: 12px;
+      color: #64748b;
+      margin: 0;
+    }
+    .article-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-action {
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .btn-edit {
+      background-color: #e0f2fe;
+      color: #0369a1;
+    }
+    .btn-edit:hover {
+      background-color: #bae6fd;
+    }
+    .btn-delete {
+      background-color: #fee2e2;
+      color: #b91c1c;
+    }
+    .btn-delete:hover {
+      background-color: #fecaca;
+    }
+    .article-count-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #e2e8f0;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+<section class="header"><div class="w-layout-blockcontainer container w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="navbar-block"><a href="index.html" class="brand-block w-nav-brand " style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; padding-top: 5px;">
+    <img src="subsidy-gyaan logo.png" alt="Subsidy Gyaan Logo" style="height: 80px; width: auto;" />
+    <span class="brand-byline" style="margin-top: 0; text-align: center; font-size: 0.8rem; font-weight: 700;">by Advait Associates</span>
+</a><nav role="navigation" class="nav-menu-block w-nav-menu"><div class="nav-menu-wrap"><a href="index.html" class="menu-link">Home</a><a href="about.html" class="menu-link">About</a><div data-delay="200" data-hover="true" data-w-id="services-dropdown" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="menu-link dropdown" onclick="window.location.href='services.html';" style="cursor: pointer;">Services</div><img loading="lazy" src="https://cdn.prod.website-files.com/69082f2869747d13e82f1a82/6908348359918a65f7271da8_down-arrow.svg" alt="down-arrow" class="dropdown-arrow-icon"/></div><nav class="dropdown-list w-dropdown-list"><a href="service-detail.html?id=dpr" class="dropdown-link w-dropdown-link">Detailed Project Report (DPR)</a><a href="service-detail.html?id=registration" class="dropdown-link w-dropdown-link">Registration &amp; Certification</a><a href="service-detail.html?id=banking" class="dropdown-link w-dropdown-link">Banking &amp; Financial Liaison</a><a href="service-detail.html?id=liaison" class="dropdown-link w-dropdown-link">Government Liaison</a></nav></div><div data-delay="200" data-hover="true" data-w-id="bbc6562a-bfb3-d8c0-d80e-2bd70185ef66" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="menu-link dropdown">Subsidies</div><img loading="lazy" src="https://cdn.prod.website-files.com/69082f2869747d13e82f1a82/6908348359918a65f7271da8_down-arrow.svg" alt="down-arrow" class="dropdown-arrow-icon"/></div><nav class="dropdown-list w-dropdown-list"><a href="central-subsidies.html" class="dropdown-link w-dropdown-link">Central Government Subsidies</a><a href="gujarat-subsidies.html" class="dropdown-link w-dropdown-link">Gujarat Government Subsidies</a></nav></div><a href="industries.html" class="menu-link">Industries</a><a href="articles.html" class="menu-link">Articles</a><a href="contact.html" class="menu-link">Contact</a><div class="button-block hide"><a href="check-subsidy-eligibility.html" class="button is-primary w-inline-block"><div class="button-text-effect"><div class="button-text is-primary-button">Check Subsidy Eligibility</div><div class="button-text is-primary-button">Check Subsidy Eligibility</div></div></a></div></div></nav><div class="nav-button-block"><div class="button-block is-nav-button"><a href="check-subsidy-eligibility.html" class="button is-primary w-inline-block"><div class="button-text-effect"><div class="button-text is-primary-button">Check Eligibility</div><div class="button-text is-primary-button">Check Eligibility</div></div></a></div></div><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></section><div class="main">
+
+<section class="admin-dashboard-hero">
+  <div class="w-layout-blockcontainer container w-container">
+    <h1>Article Management Dashboard</h1>
+    <p>Create, update, and manage your website's articles.</p>
+  </div>
+</section>
+
+<div class="admin-container">
+  
+  <!-- Left Side: Articles List -->
+  <div class="admin-card">
+    <h2>
+      Articles List 
+      <span class="article-count-badge" id="article-count">0 / 30</span>
+    </h2>
+    
+    <div class="file-status-banner">
+      <div class="file-status-info">
+        <div class="status-indicator" id="status-dot"></div>
+        <span id="status-text" style="font-weight: 500; font-size: 14px;">articles.json Not Linked</span>
+      </div>
+      <button class="btn-connect" id="btn-select-file">Link articles.json</button>
+    </div>
+
+    <div class="articles-list" id="articles-list-container">
+      <!-- Mock items shown as preview before linking -->
+      <div class="article-item">
+        <div class="article-info">
+          <h3>[Preview] Example Article Title</h3>
+          <p>Category: Central Subsidies | ID: preview-1</p>
+        </div>
+        <div class="article-actions">
+          <button class="btn-action btn-edit">Edit</button>
+          <button class="btn-action btn-delete">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side: Add/Edit Form -->
+  <div class="admin-card">
+    <h2 id="form-title">Add New Article</h2>
+    <form id="article-form">
+      <input type="hidden" id="edit-id" value=""/>
+      
+      <div class="form-group">
+        <label for="title">Article Title</label>
+        <input type="text" id="title" class="form-control" placeholder="e.g., What is PMFME Scheme?" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" class="form-control" required>
+          <option value="Central Government Subsidies">Central Government Subsidies</option>
+          <option value="Gujarat Government Subsidies">Gujarat Government Subsidies</option>
+          <option value="DPR & Advisory">DPR & Advisory</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="img">Image URL (Optional)</label>
+        <input type="text" id="img" class="form-control" placeholder="e.g., images/article-pmfme.jpg"/>
+      </div>
+
+      <div class="form-group">
+        <label for="excerpt">Short Excerpt (shows on card previews)</label>
+        <textarea id="excerpt" class="form-control" rows="3" placeholder="Brief summary of the article..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="content">Full Article Content (HTML format allowed)</label>
+        <textarea id="content" class="form-control" rows="8" placeholder="<p>Full article body goes here...</p>" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit" id="btn-submit-text">Add Article</button>
+      <button type="button" class="btn-action" id="btn-cancel-edit" style="width: 100%; margin-top: 10px; display: none; background: #e2e8f0; color: #475569;">Cancel Edit</button>
+    </form>
+  </div>
+
+</div>
+
+</div>
+
+<section class="footer" style="background-color: #F4FAFF; color: #475569; padding-bottom: 20px; font-family: 'Inter', sans-serif;">
+  <!-- Footer omitted for brevity, but kept in HTML for design consistency -->
+  <div class="w-layout-blockcontainer container w-container" style="text-align: center; padding-top: 30px; border-top: 1px solid #E2E8F0;">
+    <p>Copyright 2026 Subsidy Gyaan by Advait Associates. All Rights Reserved.</p>
+  </div>
+</section>
+
+</div>
+
+<!-- Frontend behavior scripts -->
+<script>
+  let fileHandle;
+  let articles = [];
+
+  const btnSelectFile = document.getElementById('btn-select-file');
+  const statusDot = document.getElementById('status-dot');
+  const statusText = document.getElementById('status-text');
+  const articlesListContainer = document.getElementById('articles-list-container');
+  const articleCount = document.getElementById('article-count');
+  const articleForm = document.getElementById('article-form');
+  const editIdInput = document.getElementById('edit-id');
+  const titleInput = document.getElementById('title');
+  const categoryInput = document.getElementById('category');
+  const imgInput = document.getElementById('img');
+  const excerptInput = document.getElementById('excerpt');
+  const contentInput = document.getElementById('content');
+  const formTitle = document.getElementById('form-title');
+  const btnSubmitText = document.getElementById('btn-submit-text');
+  const btnCancelEdit = document.getElementById('btn-cancel-edit');
+
+  btnSelectFile.addEventListener('click', async () => {
+    try {
+      // Show file open picker
+      const [handle] = await window.showOpenFilePicker({
+        types: [{
+          description: 'JSON Files',
+          accept: {
+            'application/json': ['.json']
+          }
+        }],
+        multiple: false
+      });
+      
+      fileHandle = handle;
+      
+      // Verify we can read/write
+      const file = await fileHandle.getFile();
+      const text = await file.text();
+      articles = JSON.parse(text);
+      
+      // Update UI state
+      statusDot.className = 'status-indicator connected';
+      statusText.textContent = `Connected: ${file.name}`;
+      btnSelectFile.textContent = 'Change Link';
+      
+      renderArticles();
+    } catch (err) {
+      console.error(err);
+      alert("Error connecting file: " + err.message);
+    }
+  });
+
+  function renderArticles() {
+    articlesListContainer.innerHTML = '';
+    articleCount.textContent = `${articles.length} / 30`;
+    
+    if (articles.length === 0) {
+      articlesListContainer.innerHTML = '<p style="color: #64748b; font-size: 14px; padding: 20px; text-align: center;">No articles found. Add one on the right!</p>';
+      return;
+    }
+
+    articles.forEach((article) => {
+      const item = document.createElement('div');
+      item.className = 'article-item';
+      item.innerHTML = `
+        <div class="article-info">
+          <h3>${escapeHTML(article.title)}</h3>
+          <p>Category: ${escapeHTML(article.category)} | ID: ${article.id}</p>
+        </div>
+        <div class="article-actions">
+          <button class="btn-action btn-edit" onclick="startEdit(${article.id})">Edit</button>
+          <button class="btn-action btn-delete" onclick="deleteArticle(${article.id})">Delete</button>
+        </div>
+      `;
+      articlesListContainer.appendChild(item);
+    });
+  }
+  
+  function escapeHTML(str) {
+    if (!str) return '';
+    return str.replace(/[&<>'"]/g, 
+      tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+    );
+  }
+
+  async function saveFile() {
+    if (!fileHandle) {
+      alert("No linked file found!");
+      return;
+    }
+    try {
+      const writable = await fileHandle.createWritable();
+      await writable.write(JSON.stringify(articles, null, 2));
+      await writable.close();
+      renderArticles();
+    } catch (err) {
+      console.error("Save failed:", err);
+      alert("Failed to save to articles.json: " + err.message);
+    }
+  }
+
+  articleForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!fileHandle) {
+      alert("Please link your articles.json file first using the 'Link articles.json' button.");
+      return;
+    }
+
+    const editId = editIdInput.value;
+    
+    const articleData = {
+      title: titleInput.value.trim(),
+      category: categoryInput.value,
+      excerpt: excerptInput.value.trim(),
+      content: contentInput.value.trim()
+    };
+
+    if (imgInput.value.trim()) {
+      articleData.img = imgInput.value.trim();
+    } else {
+      articleData.img = "";
+    }
+
+    if (editId) {
+      // Edit Mode
+      const id = parseInt(editId);
+      const index = articles.findIndex(a => a.id === id);
+      if (index !== -1) {
+        articles[index] = { id, ...articleData };
+      }
+      resetForm();
+    } else {
+      // Add Mode
+      // Check if there are already 30 articles
+      if (articles.length >= 30) {
+        // Auto-delete the oldest one (first item in array usually, or based on ID)
+        const removed = articles.shift();
+        alert(`Limit of 30 articles reached! Automatically deleted oldest article: "${removed.title}" to make space.`);
+      }
+      
+      // Generate new ID (max ID + 1)
+      const maxId = articles.reduce((max, cur) => (cur.id > max ? cur.id : max), 0);
+      const newId = maxId + 1;
+      
+      articles.push({ id: newId, ...articleData });
+      resetForm();
+    }
+
+    await saveFile();
+  });
+
+  window.startEdit = function(id) {
+    const article = articles.find(a => a.id === id);
+    if (!article) return;
+
+    editIdInput.value = article.id;
+    titleInput.value = article.title;
+    categoryInput.value = article.category;
+    imgInput.value = article.img || '';
+    excerptInput.value = article.excerpt;
+    contentInput.value = article.content;
+
+    formTitle.textContent = "Edit Article";
+    btnSubmitText.textContent = "Save Changes";
+    btnCancelEdit.style.display = "block";
+    
+    titleInput.focus();
+  };
+
+  window.deleteArticle = async function(id) {
+    if (!confirm("Are you sure you want to delete this article?")) return;
+    
+    articles = articles.filter(a => a.id !== id);
+    await saveFile();
+  };
+
+  btnCancelEdit.addEventListener('click', resetForm);
+
+  function resetForm() {
+    editIdInput.value = "";
+    articleForm.reset();
+    formTitle.textContent = "Add New Article";
+    btnSubmitText.textContent = "Add Article";
+    btnCancelEdit.style.display = "none";
+  }
+</script>
+</body>
+</html>

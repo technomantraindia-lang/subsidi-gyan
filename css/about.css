@@ -449,6 +449,14 @@
   margin-bottom: 12px;
 }
 
+.sg-about-promo .promo-text {
+  color: #14213D !important;
+}
+
+.sg-about-promo .promo-desc-text {
+  color: #475569 !important;
+}
+
 .about-promo-tagline .tagline-line--shift {
   margin-left: 70px;
 }

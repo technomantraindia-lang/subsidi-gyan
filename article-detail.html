@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Article Detail | Subsidy Gyaan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/custom.css" rel="stylesheet"/>
+  <style>
+    .article-detail-hero {
+      padding: 60px 0;
+      background-color: #f8fafc;
+      background-image: none !important;
+    }
+    .article-detail-header {
+      margin-top: 30px;
+    }
+    .article-detail-title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 15px 0;
+      line-height: 1.3;
+    }
+    .article-detail-date {
+      color: #64748b;
+      font-size: 14px;
+    }
+    .article-layout-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) {
+      .article-layout-grid {
+        grid-template-columns: 1fr 1.5fr;
+        align-items: start;
+      }
+    }
+    .article-content-wrapper {
+      max-width: 100%;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #334155;
+    }
+    .article-content-wrapper p {
+      margin-bottom: 20px;
+    }
+    .article-content-wrapper h2 {
+      font-size: 24px;
+      color: #0f172a;
+      margin: 30px 0 15px;
+    }
+    .article-content-wrapper ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    .article-content-wrapper li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+<section class="header"><div class="w-layout-blockcontainer container w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="navbar-block"><a href="index.html" class="brand-block w-nav-brand " style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; padding-top: 5px;">
+    <img src="subsidy-gyaan logo.png" alt="Subsidy Gyaan Logo" style="height: 80px; width: auto;" />
+    <span class="brand-byline" style="margin-top: 0; text-align: center; font-size: 0.8rem; font-weight: 700;">by Advait Associates</span>
+</a><nav role="navigation" class="nav-menu-block w-nav-menu"><div class="nav-menu-wrap"><a href="index.html" class="menu-link">Home</a><a href="about.html" class="menu-link">About</a><div data-delay="200" data-hover="true" data-w-id="services-dropdown" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="menu-link dropdown" onclick="window.location.href='services.html';" style="cursor: pointer;">Services</div><img loading="lazy" src="https://cdn.prod.website-files.com/69082f2869747d13e82f1a82/6908348359918a65f7271da8_down-arrow.svg" alt="down-arrow" class="dropdown-arrow-icon"/></div><nav class="dropdown-list w-dropdown-list"><a href="service-detail.html?id=dpr" class="dropdown-link w-dropdown-link">Detailed Project Report (DPR)</a><a href="service-detail.html?id=registration" class="dropdown-link w-dropdown-link">Registration &amp; Certification</a><a href="service-detail.html?id=banking" class="dropdown-link w-dropdown-link">Banking &amp; Financial Liaison</a><a href="service-detail.html?id=liaison" class="dropdown-link w-dropdown-link">Government Liaison</a></nav></div><div data-delay="200" data-hover="true" data-w-id="bbc6562a-bfb3-d8c0-d80e-2bd70185ef66" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="menu-link dropdown">Subsidies</div><img loading="lazy" src="https://cdn.prod.website-files.com/69082f2869747d13e82f1a82/6908348359918a65f7271da8_down-arrow.svg" alt="down-arrow" class="dropdown-arrow-icon"/></div><nav class="dropdown-list w-dropdown-list"><a href="central-subsidies.html" class="dropdown-link w-dropdown-link">Central Government Subsidies</a><a href="gujarat-subsidies.html" class="dropdown-link w-dropdown-link">Gujarat Government Subsidies</a></nav></div><a href="industries.html" class="menu-link">Industries</a><a href="articles.html" class="menu-link w--current">Articles</a><a href="contact.html" class="menu-link">Contact</a><div class="button-block hide"><a href="check-subsidy-eligibility.html" class="button is-primary w-inline-block"><div class="button-text-effect"><div class="button-text is-primary-button">Check Subsidy Eligibility</div><div class="button-text is-primary-button">Check Subsidy Eligibility</div></div></a></div></div></nav><div class="nav-button-block"><div class="button-block is-nav-button"><a href="check-subsidy-eligibility.html" class="button is-primary w-inline-block"><div class="button-text-effect"><div class="button-text is-primary-button">Check Eligibility</div><div class="button-text is-primary-button">Check Eligibility</div></div></a></div></div><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></section><div class="main">
+<section class="page-hero-section article-detail-hero">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="breadcrumb-nav custom-breadcrumb fade-in">
+      <a href="index.html" class="breadcrumb-home">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Home
+      </a>
+      <div class="breadcrumb-divider"><img src="https://cdn.prod.website-files.com/69082f2869747d13e82f1a82/690af44dbcda67d4e97f4bc9_breadcrumb-icon.svg" loading="lazy" alt=""/></div>
+      <a href="articles.html" class="breadcrumb-home">Articles</a>
+      <div class="breadcrumb-divider"><img src="https://cdn.prod.website-files.com/69082f2869747d13e82f1a82/690af44dbcda67d4e97f4bc9_breadcrumb-icon.svg" loading="lazy" alt=""/></div>
+      <div class="breadcrumb-current" id="breadcrumb-title">Article</div>
+    </div>
+    <div class="article-detail-header fade-in">
+      <div class="pill-button" id="article-category">[ Loading ]</div>
+      <h1 class="article-detail-title" id="article-title">Loading Article...</h1>
+      <p class="article-detail-date">11 Nov 2025</p>
+    </div>
+  </div>
+</section>
+
+<section class="article-content-section">
+  <div class="empty-space is-small"></div>
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="article-layout-grid">
+      <div class="article-image-col">
+        <img id="article-main-image" src="" alt="Article Image" style="width: 100%; border-radius: 12px; object-fit: cover; display: none;" />
+      </div>
+      <div class="article-content-wrapper" id="article-content">
+        <p>Loading article content...</p>
+      </div>
+    </div>
+    
+    <div class="article-navigation" id="article-navigation" style="display: flex; justify-content: space-between; margin-top: 50px; border-top: 1px solid #e2e8f0; padding-top: 30px; gap: 20px; flex-wrap: wrap;">
+      <!-- Next / Prev links will be injected here -->
+    </div>
+  </div>
+  <div class="empty-space"></div>
+</section>
+
+</div>
+
+<section class="footer" style="background-color: #F4FAFF; color: #475569; padding-bottom: 20px; font-family: 'Inter', sans-serif;">
+    <style>
+        .custom-footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            padding-top: 50px;
+        }
+        @media screen and (min-width: 768px) {
+            .custom-footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .custom-footer-grid {
+                grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+                gap: 50px;
+            }
+        }
+        .custom-footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+        .footer-cta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @media screen and (min-width: 768px) {
+            .footer-cta-container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .footer-bottom-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 13px; 
+            color: #64748B;
+        }
+        @media screen and (min-width: 768px) {
+            .footer-bottom-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .footer-bottom-right {
+                text-align: right;
+                min-width: 250px;
+            }
+        }
+        .new-footer-link {
+            color: #475569;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
+            line-height: 2.2;
+            display: block;
+        }
+        .new-footer-link:hover {
+            color: #0D8B8B;
+        }
+        .custom-footer-heading {
+            color: #14213D;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        .contact-list-item {
+            font-size: 14px;
+            margin-bottom: 12px;
+            line-height: 1.5;
+            color: #475569;
+        }
+    </style>
+
+    <!-- Top CTA Strip -->
+    <div class="footer-cta-strip" style="background-color: #e6f4f1; padding: 40px 0;">
+        <div class="w-layout-blockcontainer container w-container">
+            <div class="footer-cta-container">
+                <div style="flex: 1; min-width: 300px; padding-right: 20px;">
+                    <div style="font-weight: bold; color: #0D8B8B; margin-bottom: 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">Need Subsidy Guidance?</div>
+                    <h3 style="color: #14213D; font-size: 24px; margin-top: 0; margin-bottom: 8px; font-weight: 700;">Not sure which subsidy applies to your business?</h3>
+                    <p style="margin: 0; font-size: 15px; color: #475569; line-height: 1.5;">Share your business idea, location, investment plan and industry. Our team will guide you with suitable Central and Gujarat Government subsidy options.</p>
+                </div>
+                <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                    <a href="check-subsidy-eligibility.html" class="button w-inline-block" style="background-color: #F28C28; color: white; border-radius: 50px; padding: 12px 28px; font-size: 15px; font-weight: 600; text-decoration: none; transition: transform 0.3s ease; box-shadow: 0 4px 10px rgba(242, 140, 40, 0.3);">Check Subsidy Eligibility</a>
+                    <a href="contact.html" style="color: #1E73BE; font-size: 15px; font-weight: 600; text-decoration: underline;">Contact Our Expert</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Footer Columns -->
+    <div class="w-layout-blockcontainer container w-container">
+        <div class="custom-footer-grid">
+            
+            <!-- Column 1: Brand Info -->
+            <div class="custom-footer-col">
+                <a href="index.html" class="w-inline-block" style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; margin-bottom: 15px; width: max-content;">
+                    <img src="subsidy-gyaan logo.png" alt="Subsidy Gyaan Logo" style="height: 80px; width: auto;" />
+                    <span style="font-size: 14px; color: #0D8B8B; font-weight: 700; text-align: center;">by Advait Associates</span>
+                </a>
+                <p style="font-size: 14px; line-height: 1.6; margin: 0; color: #475569;">Subsidy Gyaan is a subsidy advisory and knowledge-sharing platform helping entrepreneurs, MSMEs, industries and growing businesses understand eligible Central and Gujarat Government subsidy schemes, prepare documentation, and move from idea to implementation with confidence.</p>
+                <div style="font-weight: 700; font-size: 16px; color: #1E73BE; margin-top: 5px;">ज्ञान से प्रगति, सलाह से समृद्धि</div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="custom-footer-col">
+                <div class="custom-footer-heading">Quick Links</div>
+                <div style="display: flex; flex-direction: column; gap: 0px;">
+                    <a href="index.html" class="new-footer-link">Home</a>
+                    <a href="about.html" class="new-footer-link">About</a>
+                    <a href="services.html" class="new-footer-link">Services</a>
+                    <a href="central-subsidies.html" class="new-footer-link">Central Government Subsidies</a>
+                    <a href="gujarat-subsidies.html" class="new-footer-link">Gujarat Government Subsidies</a>
+                    <a href="industries.html" class="new-footer-link">Industries</a>
+                    <a href="articles.html" class="new-footer-link">Articles</a>
+                    <a href="contact.html" class="new-footer-link">Contact</a>
+                    <a href="check-subsidy-eligibility.html" class="new-footer-link" style="color: #0D8B8B; font-weight: 600;">Check Subsidy Eligibility</a>
+                </div>
+            </div>
+
+            <!-- Column 3: Services & Subsidies -->
+            <div class="custom-footer-col">
+                <div class="custom-footer-heading">Services & Subsidies</div>
+                <div style="display: flex; flex-direction: column; gap: 0px;">
+                    <a href="central-subsidies.html" class="new-footer-link">Central Government Subsidy Advisory</a>
+                    <a href="gujarat-subsidies.html" class="new-footer-link">Gujarat Government Subsidy Advisory</a>
+                    <a href="services.html" class="new-footer-link">Detailed Project Report Preparation</a>
+                    <a href="services.html" class="new-footer-link">Registration & Certification Services</a>
+                    <a href="services.html" class="new-footer-link">Banking & Financial Liaison</a>
+                    <a href="services.html" class="new-footer-link">Government Liaison & Follow-Up</a>
+                    <a href="services.html" class="new-footer-link">Networking & Allied Services</a>
+                </div>
+            </div>
+
+            <!-- Column 4: Contact Details -->
+            <div class="custom-footer-col">
+                <div class="custom-footer-heading">Contact Details</div>
+                <div class="contact-list-item">
+                    <strong style="color: #14213D; font-weight: 600;">Phone:</strong><br/>
+                    <a href="tel:+918320542940" style="color: #475569; text-decoration: none;">+91 8320542940</a> / <a href="tel:+918866248393" style="color: #475569; text-decoration: none;">+91 8866248393</a>
+                </div>
+                <div class="contact-list-item">
+                    <strong style="color: #14213D; font-weight: 600;">Email:</strong><br/>
+                    <a href="mailto:oswal2nisarg@gmail.com" style="color: #475569; text-decoration: none;">oswal2nisarg@gmail.com</a>
+                </div>
+                <div class="contact-list-item">
+                    <strong style="color: #14213D; font-weight: 600;">Headquarters:</strong><br/>
+                    Ahmedabad, Gujarat, India
+                </div>
+                <div class="contact-list-item" style="margin-bottom: 20px;">
+                    <strong style="color: #14213D; font-weight: 600;">Service Area:</strong><br/>
+                    Across India
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div style="border-top: 1px solid #E2E8F0; margin-top: 50px; padding-top: 25px;">
+        <div class="w-layout-blockcontainer container w-container">
+            <div class="footer-bottom-container">
+                <div style="flex: 1;">
+                    <p style="margin: 0; line-height: 1.5;"><strong style="color: #14213D;">Disclaimer:</strong> Subsidy eligibility, benefit amount, approval and disbursement depend on applicable government policy, project category, location, investment, documents and department verification. Final approval is subject to official government guidelines and authority decision.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <div style="margin-bottom: 8px;">Copyright 2026 Subsidy Gyaan by Advait Associates.<br/>All Rights Reserved.</div>
+                    <div style="color: #1E73BE; font-weight: 700; font-size: 15px;">ज्ञान से प्रगति, सलाह से समृद्धि</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div><script src="js/main.js"></script>
+
+<script>
+  async function loadArticleDetail() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+
+    if (!articleId) {
+      document.getElementById('article-content').innerHTML = '<p>Article not found. <a href="articles.html">Go back to articles</a>.</p>';
+      return;
+    }
+
+    try {
+      const response = await fetch('articles.json');
+      const articles = await response.json();
+      
+      const article = articles.find(a => a.id == articleId);
+      
+      if (article) {
+        document.getElementById('breadcrumb-title').textContent = article.title;
+        document.getElementById('article-title').textContent = article.title;
+        document.getElementById('article-category').textContent = '[ ' + article.category + ' ]';
+        document.title = article.title + ' | Subsidy Gyaan';
+        
+        // If content field exists, use it. Otherwise fallback to excerpt.
+        const contentHTML = article.content ? article.content : ('<p>' + article.excerpt + '</p>');
+        document.getElementById('article-content').innerHTML = contentHTML;
+
+        if (article.img) {
+          const imgEl = document.getElementById('article-main-image');
+          imgEl.src = article.img;
+          imgEl.style.display = 'block';
+        }
+
+        // Navigation logic
+        const currentIndex = articles.findIndex(a => a.id == articleId);
+        let navHTML = '';
+        
+        if (currentIndex > 0) {
+          const prevArticle = articles[currentIndex - 1];
+          navHTML += `<a href="article-detail.html?id=${prevArticle.id}" class="button is-secondary w-inline-block" style="padding: 10px 20px; text-decoration: none; color: white;">&laquo; Previous Article</a>`;
+        } else {
+          navHTML += `<div></div>`; // placeholder for flexbox
+        }
+        
+        if (currentIndex < articles.length - 1) {
+          const nextArticle = articles[currentIndex + 1];
+          navHTML += `<a href="article-detail.html?id=${nextArticle.id}" class="button is-primary w-inline-block" style="padding: 10px 20px; text-decoration: none; color: white;">Next Article &raquo;</a>`;
+        }
+        
+        document.getElementById('article-navigation').innerHTML = navHTML;
+      } else {
+        document.getElementById('article-content').innerHTML = '<p>Article not found. <a href="articles.html">Go back to articles</a>.</p>';
+      }
+    } catch (error) {
+      console.error("Error loading article:", error);
+      document.getElementById('article-content').innerHTML = '<p>Error loading article. Please try again later.</p>';
+    }
+  }
+
+  loadArticleDetail();
+</script>
+
+</body></html>
