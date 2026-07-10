@@ -9,7 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initSmoothScroll();
   initActiveNavHighlight();
+  cleanBrackets();
 });
+
+function cleanBrackets() {
+  const elements = document.querySelectorAll('.pill-button, .hero-label');
+  elements.forEach((el) => {
+    let txt = el.textContent.trim();
+    if (txt.startsWith('[') && txt.endsWith(']')) {
+      el.textContent = txt.substring(1, txt.length - 1).trim();
+    }
+  });
+}
 
 function initMobileNav() {
   const navbar = document.querySelector('.navbar');
@@ -170,17 +181,23 @@ function initProjectTabs() {
 }
 
 function initFAQAccordion() {
-  document.querySelectorAll('.accordion-item').forEach((item) => {
+  const items = document.querySelectorAll('.accordion-item');
+  items.forEach((item) => {
     const toggle = item.querySelector('.w-dropdown-toggle');
     if (!toggle) return;
 
     toggle.addEventListener('click', (e) => {
       e.preventDefault();
       const isOpen = item.classList.contains('w--open');
-      document.querySelectorAll('.accordion-item.w--open').forEach((el) => el.classList.remove('w--open'));
+      items.forEach((el) => el.classList.remove('w--open'));
       if (!isOpen) item.classList.add('w--open');
     });
   });
+
+  // Keep the first FAQ open initially if none are open
+  if (items.length > 0 && !document.querySelector('.accordion-item.w--open')) {
+    items[0].classList.add('w--open');
+  }
 }
 
 function initVideoControls() {
@@ -231,11 +248,25 @@ function initForms() {
 
 function initScrollAnimations() {
   const targets = document.querySelectorAll(
-    '.hero-heading, .hero-tagline, .hero-content-left, .hero-coustomer-counter-card, .about-image-block, .about-video-content-block, .contact-image-block, .contact-right-block, .fade-in'
+    '.hero-heading, .hero-tagline, .hero-content-left, .hero-coustomer-counter-card, ' +
+    '.about-image-block, .about-video-content-block, .contact-image-block, .contact-right-block, ' +
+    '.fade-in, .heading-block, .custom-slider-card, .sub-strip-item, .step-card, ' +
+    '.contact-card, .article-card, .about-left-visual, .about-us-desc, .about-us-heading, ' +
+    '.about-btn-explore, .hero-visual, .about-inner-hero-visual, .sub-intro-card, ' +
+    '.sub-process-step-item, .faq-item, .sub-accordion-item, .industry-card, .cta-section'
   );
 
   targets.forEach((el) => {
     if (!el.classList.contains('fade-in')) el.classList.add('fade-in');
+  });
+
+  // Stagger grid items for a premium transition effect
+  const grids = document.querySelectorAll('.sub-strip-grid, .custom-slider-track, .process-grid, .cards-grid, .article-grid, .sub-intro-cards, .sub-process-diagram, .sub-accordion-list');
+  grids.forEach((grid) => {
+    const items = grid.querySelectorAll('.sub-strip-item, .custom-slider-card, .step-card, .contact-card, .article-card, .sub-intro-card, .sub-process-step-item, .sub-accordion-item');
+    items.forEach((item, index) => {
+      item.style.transitionDelay = `${index * 0.1}s`;
+    });
   });
 
   const observer = new IntersectionObserver(
@@ -247,7 +278,7 @@ function initScrollAnimations() {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.05, rootMargin: '0px 0px -50px 0px' }
   );
 
   targets.forEach((el) => observer.observe(el));

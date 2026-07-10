@@ -486,8 +486,8 @@
 
 /* About Section Styles */
 .impact-about-section {
-  background-color: #FEB52B !important;
-  padding: 80px 0 !important;
+  background-color: #0c2b21 !important; /* Premium dark forest green to match site */
+  padding: 50px 0 !important;
   position: relative;
   overflow: hidden;
 }
@@ -562,7 +562,7 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.95);
+  color: #FEB52B !important; /* Golden-yellow accent to pop on green background */
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -571,7 +571,7 @@
   font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
   font-weight: 800;
   font-size: 52px;
-  color: #000000;
+  color: #ffffff !important; /* White text for contrast on dark green background */
   line-height: 1.1;
   margin-bottom: 24px;
   text-transform: none;
@@ -581,28 +581,29 @@
 .about-us-desc {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85) !important; /* Semi-transparent white for readability */
   line-height: 1.6;
   margin-bottom: 32px;
 }
 
 .about-btn-explore {
-  background-color: #000000 !important;
-  color: #ffffff !important;
+  background-color: #FEB52B !important; /* Golden-yellow button background */
+  color: #0c2b21 !important; /* Deep forest green text */
   font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', sans-serif;
   font-weight: 700;
   padding: 14px 32px !important;
   border-radius: 50px !important;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px rgba(254, 181, 43, 0.25) !important;
   transition: all 0.3s ease;
   font-size: 15px;
 }
 
 .about-btn-explore:hover {
-  background-color: #1e293b !important;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3) !important;
+  background-color: #e59a1f !important; /* Slightly darker gold on hover */
+  color: #0c2b21 !important;
+  box-shadow: 0 6px 18px rgba(254, 181, 43, 0.35) !important;
   transform: translateY(-1px);
 }
 
@@ -1143,10 +1144,18 @@
 /* Active Arrow State */
 .project-tab-link.w--current .project-accordion-icon-block {
     background: rgba(255,255,255,0.15) !important;
-    transform: rotate(-90deg) !important; /* Point right instead of down */
+    transform: none !important; /* Remove rotation */
 }
 .project-tab-link.w--current .project-accordion-arrow {
-    filter: brightness(0) invert(1) !important; /* Make arrow white */
+    display: none !important; /* Hide original arrow */
+}
+.project-tab-link.w--current .project-accordion-icon-block::after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
 }
 
 /* Mobile Adjustments */
@@ -1202,4 +1211,652 @@
   color: #14213D;
   font-weight: 700;
 }
+
+/* FAQ Accordion Redesign */
+.accordion {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.accordion-item {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(12, 43, 33, 0.08) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  display: block !important;
+  position: relative !important;
+  margin-bottom: 16px !important;
+}
+
+.accordion-item:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(12, 43, 33, 0.06) !important;
+  border-color: rgba(12, 43, 33, 0.15) !important;
+}
+
+/* Open State */
+.accordion-item.w--open {
+  background-color: #f5fbf7 !important; /* Soft mint green */
+  border-color: rgba(12, 43, 33, 0.15) !important;
+  box-shadow: 0 10px 25px rgba(12, 43, 33, 0.08) !important;
+}
+
+/* Accordion Toggle (Clickable Header) */
+.accordion-toggle {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 24px 30px !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.accordion-toggle:focus {
+  outline: none !important;
+}
+
+/* Accordion Title (Question) */
+.accordion-tittle {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #0c2b21 !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  padding-right: 20px !important;
+}
+
+/* Accordion Icon Container */
+.accordion-icon-block {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: rgba(12, 43, 33, 0.05) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  flex-shrink: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.accordion-item.w--open .accordion-icon-block {
+  background: #0c2b21 !important;
+}
+
+/* Icon Lines (+ and -) */
+.accordion-icon-block .horizontal-line,
+.accordion-icon-block .vertical-line {
+  background-color: #0c2b21 !important;
+  border-radius: 2px !important;
+  position: absolute !important;
+  transition: all 0.3s ease !important;
+}
+
+.accordion-icon-block .horizontal-line {
+  width: 14px !important;
+  height: 2px !important;
+}
+
+.accordion-icon-block .vertical-line {
+  width: 2px !important;
+  height: 14px !important;
+}
+
+.accordion-item.w--open .horizontal-line {
+  background-color: #ffffff !important;
+}
+
+.accordion-item.w--open .vertical-line {
+  background-color: #ffffff !important;
+  transform: rotate(90deg) !important;
+  opacity: 0 !important;
+}
+
+/* Accordion Content Wrapper */
+.accordion-item .w-dropdown-list {
+  display: block !important;
+  position: static !important;
+  background: transparent !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.accordion-item.w--open .w-dropdown-list {
+  max-height: 250px !important;
+}
+
+/* Accordion Body */
+.accordion-body {
+  padding: 0 !important; /* No padding when collapsed to prevent text leak */
+  background: transparent !important;
+}
+
+.accordion-item.w--open .accordion-body {
+  padding: 0 30px 24px 30px !important; /* Padding only when open */
+}
+
+/* Accordion Answer Text */
+.accordion-text {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+  padding-top: 16px !important;
+  border-top: 1px solid rgba(12, 43, 33, 0.06) !important;
+}
+
+/* Home Process Section Styles */
+.home-process-section {
+  padding: 50px 0 !important;
+  background-color: #f7f9f9 !important; /* Soft off-white to alternate section backgrounds */
+}
+
+.home-process-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  margin-top: 20px !important;
+}
+
+.home-process-step {
+  background: #ffffff !important;
+  border: 1px solid rgba(12, 43, 33, 0.08) !important;
+  border-radius: 20px !important;
+  padding: 32px 28px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+}
+
+.home-process-step:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 30px rgba(12, 43, 33, 0.06) !important;
+  border-color: rgba(12, 43, 33, 0.15) !important;
+}
+
+.home-process-num {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: #00B562 !important; /* Primary brand green */
+  margin-bottom: 16px !important;
+  line-height: 1 !important;
+}
+
+.home-process-step h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #0c2b21 !important; /* Deep green */
+  margin: 0 0 12px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.home-process-step p {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  color: #475569 !important; /* Slate grey */
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* Responsiveness for Process Grid */
+@media screen and (max-width: 991px) {
+  .home-process-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-process-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .home-process-step {
+    padding: 24px !important;
+  }
+}
+
+/* Global Homepage & About Page Section Padding (50px top & bottom) */
+.main .hero-section,
+.main .impact-about-section,
+#about,
+.main .services-section,
+#services,
+.main .project-section,
+#schemes,
+.main .testimonial-section,
+#why-us,
+.main .accordion-section,
+.main .home-process-section,
+#process,
+.main .blog-section,
+#articles,
+.about-inner-hero,
+.about-intro-section,
+.about-stats-section,
+.about-purpose-section,
+.about-audience-section,
+.why-choose-section,
+.about-approach-section,
+.about-knowledge-section,
+.about-commitment-section,
+.about-trust-section {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+/* Specific spacious padding for the Counter Section on the homepage */
+.main .counter-section {
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+}
+
+/* Increase gap between counter metric cards */
+.main .counter-main-block {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 32px !important; /* Increased gap from default */
+  width: 100% !important;
+}
+
+.main .counter-single-block {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 991px) {
+  .main .counter-main-block {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .main .counter-main-block {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+/* Hero Inner Container spacing adjustment to match 50px */
+.main .hero-section > .container > div {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+/* Hide standard top/bottom empty-space elements globally to ensure consistent section padding, while keeping inner sub-spacers (.is-small) */
+.empty-space:not(.is-small) {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Premium Pill Button (Badge) Override */
+.pill-button, .hero-label {
+  display: inline-block !important;
+  width: fit-content !important; /* Restrict width to fit text only */
+  background-color: transparent !important;
+  color: #00B562 !important; /* Brand green */
+  border: none !important;
+  border-bottom: 2px solid #00B562 !important; /* Clean underline */
+  padding: 0 0 4px 0 !important; /* 4px spacing between text and underline */
+  border-radius: 0 !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  line-height: 1.2 !important;
+  box-shadow: none !important;
+  margin-bottom: 12px !important;
+}
+
+/* Also style the about-us-label which acts as the badge in the about section */
+.about-us-label {
+  display: inline-block !important;
+  width: fit-content !important; /* Restrict width to fit text only */
+  background-color: transparent !important;
+  color: #FEB52B !important; /* Gold text */
+  border: none !important;
+  border-bottom: 2px solid #FEB52B !important; /* Clean gold underline */
+  padding: 0 0 4px 0 !important; /* 4px spacing */
+  border-radius: 0 !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  line-height: 1.2 !important;
+  margin-bottom: 16px !important;
+}
+
+/* Styling for homepage process heading */
+#process h2.section-heading {
+  max-width: 100% !important; /* Allow the heading to take up full available container width */
+  line-height: 1.45 !important;
+  letter-spacing: -0.5px !important;
+  margin-bottom: 24px !important;
+}
+
+#process .heading-block {
+  max-width: 1000px !important; /* Increased width to allow heading to fit on 2 lines */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 60px !important; /* Spacious margin below heading block */
+}
+
+/* Redesigned "Who We Support" Section */
+.about-support-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  margin-top: 20px !important;
+}
+
+.about-support-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(12, 43, 33, 0.08) !important;
+  border-radius: 20px !important;
+  padding: 36px 30px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.about-support-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 15px 35px rgba(12, 43, 33, 0.08) !important;
+}
+
+/* Card Icons */
+.support-icon-block {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 26px !important;
+  margin-bottom: 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+.icon-industrial {
+  background-color: rgba(13, 139, 139, 0.08) !important;
+  color: #0D8B8B !important;
+}
+
+.icon-agro {
+  background-color: rgba(254, 181, 43, 0.08) !important;
+  color: #FEB52B !important;
+}
+
+.icon-grassroots {
+  background-color: rgba(0, 181, 98, 0.08) !important;
+  color: #00B562 !important;
+}
+
+.about-support-card:hover .support-icon-block {
+  transform: scale(1.08) rotate(3deg) !important;
+}
+
+/* Card Heading & Desc */
+.about-support-card h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #0c2b21 !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.support-card-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  margin: 0 0 24px 0 !important;
+}
+
+/* Card List */
+.support-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin-top: auto !important;
+}
+
+.support-list-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+}
+
+.support-list-item span {
+  color: #00B562 !important; /* Green checkmark */
+  font-weight: 700 !important;
+}
+
+/* Hover effects targeting borders */
+.about-support-card.card-industrial:hover {
+  border-color: rgba(13, 139, 139, 0.25) !important;
+}
+
+.about-support-card.card-agro:hover {
+  border-color: rgba(254, 181, 43, 0.25) !important;
+}
+
+.about-support-card.card-grassroots:hover {
+  border-color: rgba(0, 181, 98, 0.25) !important;
+}
+
+/* Responsive grid */
+@media screen and (max-width: 991px) {
+  .about-support-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-support-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .about-support-card {
+    padding: 30px 24px !important;
+  }
+}
+
+/* Styling for About Page headings */
+.about-audience-section .heading-block,
+.about-commitment-section .heading-block {
+  max-width: 1000px !important; /* Increase width to allow heading to fit in 2 lines */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.about-audience-section h2.section-heading,
+.about-commitment-section h2.section-heading {
+  max-width: 100% !important; /* Ensure heading text takes up full available width */
+  line-height: 1.2 !important;
+}
+
+/* Styling for About Page Knowledge card heading */
+.about-knowledge-card {
+  max-width: 1000px !important; /* Increase width to allow heading to fit in 2 lines */
+}
+
+.about-knowledge-card h2.section-heading {
+  max-width: 100% !important; /* Ensure heading text takes up full available width */
+  line-height: 1.2 !important;
+}
+
+/* Services Page Enhancements */
+.services-section .empty-space:not(.is-small) {
+  display: none !important;
+}
+
+.services-section .heading-block.is-service {
+  max-width: 1000px !important; /* Increase width to allow heading to fit in 2 lines */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.services-section h2.section-heading.is-service {
+  max-width: 100% !important; /* Ensure heading text takes up full available width */
+  line-height: 1.2 !important;
+}
+
+/* Center align Scheme Details heading block */
+.sub-accordion-section .heading-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-accordion-section .heading-block .section-intro-text {
+  padding-top: 15px;
+}
+
+/* Add gap between buttons in hero section */
+.about-inner-hero-content .button-block.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Center align text in FAQ section */
+.sub-faq-section .section-intro-text {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+/* Entrance Animations for Hero Collage Components */
+@keyframes greenCircleEntrance {
+  from {
+    opacity: 0;
+    transform: translateX(-120px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes yellowCircleEntrance {
+  from {
+    opacity: 0;
+    transform: translateX(120px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes collageImageSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes collageImageSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes collageImageSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes collageImageZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.collage-circle-green {
+  opacity: 0;
+  animation: greenCircleEntrance 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.collage-circle-yellow {
+  opacity: 0;
+  animation: yellowCircleEntrance 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.collage-wide-img {
+  opacity: 0;
+  animation: collageImageSlideDown 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+}
+
+.collage-left-mid-img {
+  opacity: 0;
+  animation: collageImageSlideLeft 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.collage-right-mid-img {
+  opacity: 0;
+  animation: collageImageSlideRight 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.collage-left-bot-img {
+  opacity: 0;
+  animation: collageImageSlideLeft 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+.collage-center-mid-img {
+  opacity: 0;
+  animation: collageImageZoom 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+
+
 
