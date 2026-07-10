@@ -1858,5 +1858,71 @@
   animation: collageImageZoom 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
 
+/* Hero Grid Wrapper (Replacing Inline Grid) */
+.hero-grid-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* =========================================
+   Responsiveness for 1024px Max Width
+   ========================================= */
+@media screen and (max-width: 1024px) {
+  .hero-grid-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 35px !important;
+    text-align: center !important;
+    padding: 40px 0 !important;
+  }
+  .impact-hero-title,
+  .impact-hero-subheading,
+  .impact-hero-text {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+  .hero-buttons-container {
+    justify-content: center !important;
+  }
+  .custom-services-grid {
+    grid-template-columns: 320px 1fr !important;
+    gap: 30px !important;
+  }
+  .impact-about-grid {
+    grid-gap: 30px !important;
+  }
+}
+
+/* Dynamic sizing for Hero Collage on Mobile */
+@media screen and (max-width: 767px) {
+  .impact-collage-grid {
+    grid-template-rows: 100px 170px 110px !important;
+    max-width: 460px !important;
+    grid-gap: 12px !important;
+  }
+  .collage-circle-green,
+  .collage-circle-yellow {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .impact-collage-grid {
+    grid-template-rows: 75px 120px 80px !important;
+    max-width: 320px !important;
+    grid-gap: 8px !important;
+  }
+  .collage-circle-green,
+  .collage-circle-yellow {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+
 
 
