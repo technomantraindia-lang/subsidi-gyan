@@ -1,8 +1,8 @@
 @echo off
 echo Pushing changes to technomantraindia-lang/subsidi-gyan...
 git add .
-git commit -m "Design layout updates, FAQ centering, and scroll reveal animations"
+git commit -m "Update subsidy schemes accordions, 5 featured scheme cards, service pages & full-space images"
 git push
 echo.
-echo Done! Press any key to exit.
+echo Done! All changes successfully pushed to GitHub.
 pause

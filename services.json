@@ -1,5 +1,44 @@
 [
   {
+    "id": "advisory",
+    "title": "Government Subsidy Advisory",
+    "tagline": "End-to-end guidance for Central and Gujarat State Government subsidy schemes to maximize capital & interest incentives.",
+    "image": "assets/gujratgovsubsidy.png",
+    "introduction": "Navigating government subsidy policies can be overwhelming due to complex eligibility parameters, location rules, investment thresholds, and department documentation requirements. At Subsidy Gyaan, we provide dedicated subsidy advisory services for entrepreneurs, MSMEs, large industrial units, and agricultural enterprises.",
+    "importance": "Without expert advisory, businesses risk missing out on substantial capital grants, interest subventions, and power tariff waivers. Our team evaluates your project parameters against active policies (such as PMFME, AIF, NABARD, and Viksit Gujarat Industrial Policy) to design a strategic subsidy roadmap that ensures seamless application and maximum financial benefit.",
+    "offerings": [
+      {
+        "title": "Scheme Eligibility Mapping",
+        "description": "Comprehensive evaluation of your business model, investment size, location, and industry sector to identify all eligible Central and State schemes."
+      },
+      {
+        "title": "Subsidy Structuring & Strategy",
+        "description": "Structuring your project cost, machinery split, and term loan timelines to optimize grant percentages and claim caps."
+      },
+      {
+        "title": "Central Policy Guidance",
+        "description": "Advisory on PMFME, AIF, NABARD/AMIGS, MOFPI, EPCG, APEDA, Cold Storage, and Renewable Energy subsidy programs."
+      },
+      {
+        "title": "Gujarat State Policy Advisory",
+        "description": "Guidance for Viksit Gujarat MSME incentives, Textile policy benefits, Logistic Park assistance, and Electric Duty waivers."
+      }
+    ],
+    "process": [
+      "Initial project consultation and location/category analysis.",
+      "Identification of applicable Central and Gujarat Government subsidy policies.",
+      "Formulating a customized subsidy roadmap and eligibility checklist.",
+      "Guiding DPR preparation, bank loan alignment, and department filings.",
+      "Continuous tracking and handholding until final subsidy disbursement."
+    ],
+    "whyChooseUs": [
+      "Deep expertise in both Central Ministries and Gujarat DIC policy frameworks.",
+      "Proven track record of 3,500+ successful client advisories across India.",
+      "Transparent, compliance-first approach with zero hidden delays.",
+      "Dedicated focus on maximizing financial benefits for growing enterprises."
+    ]
+  },
+  {
     "id": "dpr",
     "title": "Detailed Project Report (DPR) Preparation",
     "tagline": "Bank-ready and government-compliant project reports for seamless subsidy & loan approvals.",
@@ -42,7 +81,7 @@
     "id": "registration",
     "title": "Registration & Certification Services",
     "tagline": "End-to-end support to secure critical business registrations and certifications for compliance.",
-    "image": "assets/DPR,%20Registration%20%26%20Documentation%20Support.png",
+    "image": "assets/Knowledge%20Hub.png",
     "introduction": "Securing the correct government registrations is the very first step toward making your business eligible for any state or central subsidy. From Udyam Registration for MSMEs to FSSAI licensing for food units, each certificate acts as proof of compliance and legal standing.",
     "importance": "Many business owners apply for subsidies only to realize their basic registrations are either missing, incorrect, or mismatched with their bank loan details. Such minor technical errors can disqualify a project. Subsidy Gyaan handles the entire registration and licensing pipeline on your behalf, ensuring all credentials are set up accurately from day one.",
     "offerings": [
@@ -83,23 +122,23 @@
     "tagline": "Seamless coordination with banks and financial institutions to secure subsidy-linked term loans.",
     "image": "assets/Services/Banking%20%26%20Financial%20Liaison.png",
     "introduction": "Most government subsidies (like PMFME, AIF, and Gujarat State MSME subsidies) are credit-linked, meaning they require a bank term loan to be sanctioned. Navigating bank procedures, documentation, and follow-ups can be overwhelming for business owners.",
-    "importance": "A subsidy cannot be claimed if the term loan is not sanctioned and disbursed under the specific guidelines of the scheme. Banks need precise details, including compliant project costs, proper security coverage, and term loan structures. We bridge the gap between you and the financial institution, helping you secure the right financing structure while ensuring maximum subsidy eligibility.",
+    "importance": "A subsidy cannot be claimed if the term loan is not sanctioned and disbursed under the specific guidelines of the scheme. Banks need precise details, including compliant project costs, proper security coverage, and term loan structures. We bridge the gap between you and the financial institution, helping you secure the right financing structure while ensuring maximum subsidy eligibility.\n\nStrong Banking & Financial Network:\nAt Subsidy Gyaan, we have built strong professional relationships with leading public sector, private sector, and cooperative banks across India. Our extensive banking network enables us to guide clients through project financing, term loan assistance, working capital requirements, and credit-linked subsidy schemes with greater efficiency. We coordinate with financial institutions to ensure that projects are structured in line with banking requirements, helping clients achieve smoother loan processing and successful project implementation.",
     "offerings": [
       {
         "title": "Term Loan Documentation",
         "description": "Structuring loan applications with all required annexures, project files, and financial statements."
       },
       {
-        "title": "Liaison with Bankers",
-        "description": "Directly coordinating with bank branch managers, credit managers, and appraisers to clarify project details."
+        "title": "Strong Banking & Financial Network",
+        "description": "Leveraging established relationships with leading public, private, and cooperative banks across India to accelerate term loan processing."
       },
       {
-        "title": "Subsidy-Linked loan setup",
-        "description": "Ensuring the term loan is structured (moratorium, repayment period, interest rate) to comply with scheme rules."
+        "title": "Subsidy-Linked Loan Setup",
+        "description": "Ensuring term loan structures (moratorium, repayment period, interest rate) comply with scheme eligibility rules."
       },
       {
         "title": "Disbursement Tracking",
-        "description": "Guiding the client on proper term loan disbursement stages to keep the subsidy claim active."
+        "description": "Guiding clients on proper term loan disbursement stages to keep the subsidy claim active."
       }
     ],
     "process": [
@@ -110,7 +149,7 @@
       "Securing the final bank sanction letter and advising on disbursement."
     ],
     "whyChooseUs": [
-      "Established relationships with nationalized, cooperative, and private banks.",
+      "Established relationships with nationalized, cooperative, and private banks across India.",
       "Expert knowledge of bank credit rating and project appraisal criteria.",
       "Over 3,500+ successful credit syndication cases supported.",
       "Helps avoid loan rejections caused by poorly structured application files."
@@ -122,7 +161,7 @@
     "tagline": "End-to-end follow-up with government departments to track, clarify, and approve your subsidy claims.",
     "image": "assets/Services/Government%20Liaison%20%26%20Follow-Up.png",
     "introduction": "Applying for a government subsidy is only half the battle. The critical phase begins after submission, where files go through multiple levels of desk audits, physical inspections, query resolutions, and final department approvals.",
-    "importance": "A large percentage of subsidy applications get delayed or rejected simply because the business owner failed to respond to department queries within the tight deadlines. Navigating government offices, answering technical objections, and coordinating inspection schedules require dedicated focus. Our liaison team manages this complex process for you, tracking your file through DIC, MOFPI, NABARD, or state departments.",
+    "importance": "A large percentage of subsidy applications get delayed or rejected simply because the business owner failed to respond to department queries within tight deadlines. Navigating government offices, answering technical objections, and coordinating inspection schedules require dedicated focus. Our liaison team manages this complex process for you, tracking your file through DIC, MOFPI, NABARD, or state departments.",
     "offerings": [
       {
         "title": "Online Application Submission",
@@ -144,7 +183,7 @@
     "process": [
       "Filing the initial subsidy claim form on the designated department portal.",
       "Monitoring the application status weekly for any updates or department remarks.",
-      "Preparing documents and coordinate physical site visits with government officers.",
+      "Preparing documents and coordinating physical site visits with government officers.",
       "Addressing any queries raised by the scrutiny committee or audit team.",
       "Securing the final subsidy sanction order and coordinating release."
     ],
@@ -153,6 +192,135 @@
       "Expert liaison team that understands government procedures inside out.",
       "Quick query resolution to keep your application moving without blocks.",
       "Minimizes rejection risk and ensures smooth release of approved subsidy funds."
+    ]
+  },
+  {
+    "id": "networking",
+    "title": "Industrial & Machinery Supplier Networking",
+    "tagline": "Connecting expanding businesses with verified machinery suppliers, technology vendors, and industrial partners.",
+    "image": "assets/Ecosystem%20Support.png",
+    "introduction": "Setting up or upgrading an industrial manufacturing or food processing unit requires sourcing high-performance machinery, obtaining competitive quotations, and ensuring compliance with government technical specifications. Subsidy Gyaan bridges the gap by connecting businesses with reliable equipment manufacturers and industrial vendors.",
+    "importance": "Machine quotations and technical specifications play a crucial role in subsidy approval and bank loan appraisals. Incompliant machinery quotes or unverified vendors can cause application rejection. Our networking support connects you with established suppliers across India, ensuring your equipment selection meets government subsidy norms while delivering operational excellence.",
+    "offerings": [
+      {
+        "title": "Verified Machinery Sourcing",
+        "description": "Connecting you with reputed equipment manufacturers for food processing, packaging, and general manufacturing."
+      },
+      {
+        "title": "Subsidy-Compliant Quotations",
+        "description": "Ensuring machinery vendor quotes contain proper GST, specs, and details required by DIC and bank appraisers."
+      },
+      {
+        "title": "Technology Partner Connect",
+        "description": "Introducing specialized technology partners for plant automation, solar power, and biomass energy units."
+      },
+      {
+        "title": "Industrial Ecosystem Access",
+        "description": "Connecting entrepreneurs with raw material suppliers, packaging vendors, and industrial service providers."
+      }
+    ],
+    "process": [
+      "Understanding your project capacity, product type, and machinery requirements.",
+      "Shortlisting vetted machinery manufacturers and technology vendors.",
+      "Facilitating quotation collection and technical specification verification.",
+      "Aligning vendor details with your DPR and subsidy application file.",
+      "Assisting during procurement and plant layout installation stages."
+    ],
+    "whyChooseUs": [
+      "Access to an extensive network of verified machinery vendors across India.",
+      "Deep understanding of technical requirements for PMFME, MSME, and State schemes.",
+      "Helps prevent project delays caused by invalid machinery documentation.",
+      "Comprehensive support from vendor selection to subsidy submission."
+    ]
+  },
+  {
+    "id": "compliance",
+    "title": "Food Technologist & Compliance Support",
+    "tagline": "Technical compliance, FSSAI standards, and product quality guidance for food processing and industrial units.",
+    "image": "assets/Services/Food%20Technologist%20%26%20Compliance%20Support.png",
+    "introduction": "Food processing enterprises and manufacturing units must adhere to strict regulatory standards, hygiene protocols, product testing guidelines, and government safety norms. At Subsidy Gyaan, we offer expert food technology and statutory compliance assistance to ensure your unit meets all legal requirements smoothly.",
+    "importance": "Non-compliance with FSSAI regulations, pollution control norms, or factory standards can lead to operational shutdowns, penalties, and disqualification from government subsidy programs like PMFME or MOFPI. Our compliance team provides hands-on technical guidance, product recipe standardization, and lab testing assistance to safeguard your enterprise.",
+    "offerings": [
+      {
+        "title": "Food Product Standardization",
+        "description": "Assisting with product formulation, shelf-life studies, nutritional labeling, and recipe standardization."
+      },
+      {
+        "title": "FSSAI & Regulatory Compliance",
+        "description": "Guidance on state and central FSSAI licensing, FoSCoS portal filings, and annual returns."
+      },
+      {
+        "title": "Plant Layout & Hygiene Audits",
+        "description": "Designing factory layouts compliant with Good Manufacturing Practices (GMP) and HACCP norms."
+      },
+      {
+        "title": "Environmental & Statutory Approvals",
+        "description": "Facilitating Pollution Control Board NOCs (GPCB), factory licenses, and safety certifications."
+      }
+    ],
+    "process": [
+      "Initial assessment of your plant setup, product category, and regulatory requirements.",
+      "Conducting gap analysis for hygiene, layout, and technical documentation.",
+      "Preparing compliance checklists and submitting applications for licenses and NOCs.",
+      "Coordinating product lab testing and nutritional label validation.",
+      "Providing ongoing advice on regulatory updates and periodic renewals."
+    ],
+    "whyChooseUs": [
+      "Expert food technologists and legal compliance advisors on board.",
+      "Specialized focus on micro food processors, gruh udyog, and agri-businesses.",
+      "Prevents costly rejection of subsidy claims due to technical non-compliance.",
+      "Complete end-to-end guidance from plant setup to market launch."
+    ]
+  },
+  {
+    "id": "mentorship",
+    "title": "Entrepreneurship Development & Startup Mentorship",
+    "tagline": "Turn your business idea into a successful enterprise with strategic guidance, financial planning, and continuous mentorship.",
+    "image": "assets/Ecosystem%20Support.png",
+    "introduction": "Starting a business involves much more than registering a company or investing capital. Entrepreneurs need strategic guidance, financial planning, government support, compliance knowledge, and continuous mentorship to build a sustainable and profitable business. At Subsidy Gyaan, we mentor aspiring entrepreneurs, startups, MSMEs, and business owners by providing practical guidance from the idea stage to successful business establishment and growth.",
+    "importance": "Whether you are launching your first venture or expanding an existing business, our experienced advisors help you make informed decisions, minimize risks, and maximize growth opportunities. With our end-to-end mentorship, you gain clarity on market viability, funding avenues, government schemes, and legal compliance.",
+    "offerings": [
+      {
+        "title": "Business Idea Validation",
+        "description": "Analyzing your core concept, market demand, and business model feasibility before major capital investment."
+      },
+      {
+        "title": "Project Planning & Strategy",
+        "description": "Formulating structured business plans, operational blueprints, and growth roadmaps."
+      },
+      {
+        "title": "Subsidy & Incentive Guidance",
+        "description": "Mapping applicable Central and Gujarat Government subsidies to lower your initial capital burden."
+      },
+      {
+        "title": "Bank Loan & Financial Planning",
+        "description": "Structuring loan requirements, financial projections, and bank credit pitching for capital access."
+      },
+      {
+        "title": "Registration & Compliance Guidance",
+        "description": "Guiding incorporation, Udyam, GST, FSSAI, and statutory licensing setup."
+      },
+      {
+        "title": "Documentation & Project Reports",
+        "description": "Preparing professional Detailed Project Reports (DPR) and bank-ready files."
+      },
+      {
+        "title": "Industry & Vendor Networking",
+        "description": "Connecting you with equipment suppliers, technology partners, and industrial networks."
+      }
+    ],
+    "process": [
+      "Initial 1-on-1 consultation to understand your business vision and current stage.",
+      "Comprehensive evaluation of idea feasibility, market scope, and financial needs.",
+      "Customized roadmap creation including DPR, registration, and subsidy mapping.",
+      "Hands-on execution support for bank loan applications and government filings.",
+      "Ongoing mentorship and periodic review to ensure smooth business launch and growth."
+    ],
+    "whyChooseUs": [
+      "Practical, real-world business and subsidy advisory tailored for startups.",
+      "Proven track record of mentoring 3,500+ MSMEs and entrepreneurs across India.",
+      "End-to-end assistance covering legal, financial, banking, and government liaison.",
+      "Focus on risk reduction and maximizing government incentives."
     ]
   }
 ]
