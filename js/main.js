@@ -92,7 +92,6 @@ function initCustomServiceSlider() {
   const totalCards = cards.length;
   
   function getVisibleCardsCount() {
-    if (window.innerWidth <= 767) return 1;
     return 2;
   }
   

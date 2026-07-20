@@ -4,6 +4,7 @@
 .sub-accordion-body.w-dropdown-list {
   display: none !important;
 }
+
 .sub-accordion-item.w--open .sub-accordion-body.w-dropdown-list {
   display: block !important;
 }
@@ -738,7 +739,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .sub-strip-grid {
     grid-template-columns: 1fr;
   }

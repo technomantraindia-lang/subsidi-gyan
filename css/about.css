@@ -20,7 +20,8 @@
 .about-pill-badge {
   display: inline-block;
   background: rgba(12, 43, 33, 0.05);
-  color: #0c2b21; /* deep professional green */
+  color: #0c2b21;
+  /* deep professional green */
   padding: 6px 14px;
   border-radius: 100px;
   font-size: 0.85rem;
@@ -34,7 +35,8 @@
 .about-inner-title {
   font-size: clamp(2.2rem, 4vw, 3rem);
   line-height: 1.2;
-  color: #0c2b21; /* deep professional green */
+  color: #0c2b21;
+  /* deep professional green */
   margin: 0 0 16px;
   font-weight: 800;
   font-family: 'Outfit', sans-serif;
@@ -43,7 +45,8 @@
 .about-inner-tagline {
   font-size: 1.15rem;
   font-weight: 600;
-  color: #e3572b; /* Subtle vibrant orange for contrast */
+  color: #e3572b;
+  /* Subtle vibrant orange for contrast */
   margin: 0 0 24px;
   letter-spacing: 0.02em;
 }
@@ -129,9 +132,9 @@
 /* Intro */
 .about-intro-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
 }
 
 .about-brand-card-inner {
@@ -476,7 +479,7 @@
 }
 
 /* About page header on light bg */
-.about-inner-hero ~ .header,
+.about-inner-hero~.header,
 .page-wrapper .header {
   background: #fff;
 }
@@ -493,7 +496,8 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
+
   .about-inner-hero-grid,
   .about-intro-grid,
   .about-purpose-grid,
@@ -523,7 +527,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
   .about-audience-grid,
   .about-process-grid,
   .about-commitment-grid {
@@ -545,5 +550,32 @@
 
   .about-knowledge-card {
     padding: 28px 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about-inner-hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .about-inner-title {
+    font-size: 1.6rem;
+  }
+
+  .about-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro-grid {
+    gap: 40px;
   }
 }
