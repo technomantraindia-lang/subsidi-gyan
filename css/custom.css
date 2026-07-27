@@ -2628,7 +2628,7 @@ body.loading {
   top: 0;
   width: 50%;
   height: 100%;
-  background-color: #0c2b21; /* Brand Dark Green */
+  background-color: #ffffff; /* White loading screen background */
   transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
   z-index: 1;
 }
@@ -2694,7 +2694,7 @@ body.loaded .fancy-preloader-content {
   width: 120%;
   height: 120%;
   border-radius: 50%;
-  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border: 2px dashed rgba(12, 43, 33, 0.2);
   border-top-color: #f7a01d; /* Brand orange/gold */
   opacity: 0;
   animation: ringReveal 0.8s ease forwards 0.8s, spinRing 4s linear infinite 0.8s;
@@ -2705,7 +2705,7 @@ body.loaded .fancy-preloader-content {
   font-family: 'Outfit', sans-serif;
   font-size: 52px; /* Increased font size for bigger branding */
   font-weight: 800;
-  color: #ffffff;
+  color: #0c2b21; /* Dark green for visibility on white background */
   letter-spacing: 2px;
   line-height: 1.2;
   margin-top: 35px; /* Added space between logo and text */
