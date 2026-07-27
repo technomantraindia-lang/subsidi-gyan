@@ -1,0 +1,140 @@
+SUBSIDY GYAAN
+by Advait Associates
+Contact Us Page Layout Document
+Gyaan se Pragati, Salah se Samriddhi
+
+Page Type Main Contact Page | Theme Modern Light Consultancy | Primary Goal Convert visitors into enquiries
+
+1. Contact Page Goal
+The Contact Us page must work as a conversion-focused consultation page, not only a simple form page. Visitors should immediately understand how to reach Subsidy Gyaan, what kind of help they can ask for, and what happens after they submit an enquiry. The page should make the visitor confident enough to call, WhatsApp, email, or fill the consultation form.
+Help entrepreneurs and industries ask for subsidy eligibility guidance quickly.
+Show phone, email, headquarters and Pan-India service area clearly above the fold.
+Make the contact form practical for subsidy consultancy by collecting business idea, industry, investment range and required support.
+Explain the post-enquiry process so users know they will receive guidance, not just a generic reply.
+2. Page Placement in Website Structure
+This is the final main page in the website navigation. It should be linked from every CTA button such as Check Eligibility, Book Consultation, Contact Our Expert, and Call Now.
+
+Home | About | Services | Subsidies
+Industries | Articles | Contact | CTA: Check Eligibility
+
+3. Contact Page Section-by-Section Layout
+Section 1: Contact Hero
+Top hero section with page badge, emotional headline, short copy, CTA buttons, and a right-side visual card composition. The hero must show that this is an expert consultation page for subsidy eligibility and business growth guidance.
+Section 2: Quick Contact Cards
+Four contact cards displaying Phone, Email, Headquarters, and Service Area. This section should be immediately visible after hero so users do not need to search for basic contact details.
+Section 3: Enquiry Form + Consultation Panel
+Main two-column contact block. Left side contains the form. Right side contains a consultation information panel explaining the type of enquiries Subsidy Gyaan supports.
+Section 4: What Can You Ask Us?
+Small service-help grid that clarifies users can ask about Central subsidies, Gujarat subsidies, DPR, registrations, bank finance, food processing subsidy, textile subsidy, logistics subsidy and government process support.
+Section 5: What Happens After You Contact Us?
+Simple step flow explaining response process: enquiry review, eligibility discussion, document planning, and application/documentation support.
+Section 6: Ahmedabad Headquarters + Pan-India Advisory Reach
+Location-focused section with Ahmedabad HQ, service across India, and optional map placeholder. This section should build trust without making the page feel local-only.
+Section 7: Contact FAQ
+Short FAQ accordion to answer common contact-related questions.
+Section 8: Final CTA + Footer
+End with the brand line and a strong call-to-action. Footer repeats phone, email, headquarters, service area and disclaimer.
+4. Section 1 - Contact Hero
+Layout: left content + right visual. Use the same light theme as the homepage and other inner pages. Background should be soft blue-green gradient with subtle document, line, or grid pattern.
+
+Left Content [ Contact Subsidy Gyaan ] Let us discuss your subsidy eligibility and business growth plan Share your business idea, investment plan, location and industry. Our team will guide you with suitable Central and Gujarat Government subsidy options, DPR preparation, registration support and documentation process. CTA Buttons: Send Enquiry | Call Now | Right Visual Direction A premium contact visual showing a consultation card, subsidy document, phone/WhatsApp icon, Ahmedabad map pin, and floating labels such as DPR, MSME, PMFME, Gujarat Subsidy and Central Subsidy.
+
+5. Section 2 - Quick Contact Cards
+Display this section as four horizontal cards on desktop and stacked cards on mobile. Each card should have an icon, label, main value, and one action link.
+
+Phone +91 8320542940 / +91 8866248393
+Action: Tap to call | Email oswal2nisarg@gmail.com
+Action: Send email
+Headquarters Ahmedabad, Gujarat
+Action: View location | Service Area Across India
+Action: Start online consultation
+
+6. Section 3 - Enquiry Form + Consultation Panel
+This is the most important conversion section. Keep the form clean, not too long, but enough to collect useful information for subsidy eligibility guidance.
+
+Form Fields Full Name Mobile Number Email Address City / State Business Type / Industry New Business or Existing Unit Estimated Investment Range Need Help With: Subsidy / DPR / Registration / Bank Finance / Full Setup Message / Brief Project Details Button: Submit Enquiry | Consultation Panel Title: What our team can guide you on Central Government subsidy schemes Gujarat Government subsidy schemes DPR and project report preparation Udyam, FSSAI, GST and IEC registration support Banking and financial liaison Government liaison and application follow-up
+
+7. Section 4 - What Can You Ask Us?
+This section reduces confusion for first-time users. Many visitors may not know whether their query is relevant, so show clear enquiry categories.
+
+Subsidy Eligibility Ask which Central or Gujarat Government subsidy may apply to your project. | DPR Preparation Ask about project report preparation for subsidy, finance or government applications.
+Registration Support Ask about Udyam, FSSAI, GST, IEC and other required registrations. | Food Processing Projects Ask about PMFME, MOFPI, cold storage and food processing support.
+Industrial Expansion Ask about MSME, large, mega or ultra-mega unit incentive possibilities. | Liaison & Follow-Up Ask about banking, government department coordination and documentation flow.
+
+8. Section 5 - What Happens After You Contact Us?
+Use a clean four-step process timeline. This should feel practical and reassuring.
+
+01. Share Your Requirement User submits business idea, location, investment and required support. | 02. Initial Review Team checks the basic subsidy, registration and document direction.
+03. Consultation Discussion User receives guidance on possible next steps, eligibility and required documentation. | 04. Execution Support DPR, registration, application filing, liaison and follow-up support can begin as applicable.
+
+9. Section 6 - Ahmedabad Headquarters + Pan-India Advisory Reach
+This section should show local trust and national reach together. Use an Ahmedabad map placeholder or abstract India map visual. Do not make the page look limited to Ahmedabad only because the brochure clearly mentions advisory reach across India.
+
+Location Content Headquarters: Ahmedabad, Gujarat Service Area: Across India Suggested text: Based in Ahmedabad and serving businesses across India, Subsidy Gyaan supports entrepreneurs, MSMEs, food processors, industrial units, SHGs, FPOs and growing businesses with Central and State Government subsidy advisory. | Visual / Map Placeholder Use a light map visual, Ahmedabad location pin, and India-wide advisory line. Optional: embed Google Map only when final business address/link is available.
+
+10. Section 7 - Contact FAQ
+Use accordion style in the HTML page. Keep FAQ short and contact-focused.
+Can I contact Subsidy Gyaan for a new business idea?
+Yes. New entrepreneurs can share their business idea, investment plan and location to understand possible subsidy and setup guidance.
+Do you guide for both Central and Gujarat Government subsidies?
+Yes. The website should clearly mention guidance for both Central Government and Gujarat Government subsidy schemes.
+Can I ask about DPR preparation?
+Yes. DPR preparation should be one of the main enquiry topics because it supports subsidy and project finance applications.
+Do you support registration and certification work?
+Yes. The contact form should allow users to ask about Udyam, FSSAI, GST, IEC and other industry-specific certification support.
+Is service available outside Ahmedabad?
+Yes. The service area should be shown as Across India.
+11. Section 8 - Final CTA + Footer Direction
+The final CTA must repeat the emotional brand line and give users a clear next action.
+
+Gyaan se Pragati, Salah se Samriddhi Need guidance for subsidy eligibility, DPR, registration or business setup? CTA Buttons: Book Consultation | Call Now
+
+Footer columns should remain consistent with the rest of the website: Logo/brand summary, Quick Links, Services, Subsidy Categories, Contact Details and Disclaimer.
+12. Ready-to-Use Contact Page Copy
+Hero Badge
+[ Contact Subsidy Gyaan ]
+Hero Heading
+Let us discuss your subsidy eligibility and business growth plan
+Hero Description
+Share your business idea, investment plan, industry and location. Subsidy Gyaan by Advait Associates will guide you with suitable Central and Gujarat Government subsidy options, DPR preparation, registration support, documentation and government process assistance.
+Contact Section Heading
+Connect with Subsidy Gyaan
+Form Heading
+Send Your Subsidy Enquiry
+Location Section Heading
+Ahmedabad-based advisory, serving businesses across India
+13. Design System for Contact Page
+Maintain the same modern light-theme style selected for the website.
+
+Background | White, soft sky blue and soft green blocks
+Primary Colors | #1E73BE blue, #0D7C83 teal, #82B440 green
+CTA Color | #F28C28 orange accent with blue/green hover
+Cards | Rounded corners, light border, subtle shadow, icon circle
+Typography | Plus Jakarta Sans / Manrope for headings, Inter / Open Sans for body
+Animation | Fade-up on scroll, hover lift on cards, smooth FAQ accordion
+
+14. Responsive Rules
+Desktop: hero and form sections should use two-column layout.
+Tablet: reduce card columns to two per row and keep enough spacing.
+Mobile: stack hero, contact cards, form, consultation panel and map vertically.
+Phone, WhatsApp and email links must be tap-friendly.
+Keep sticky mobile CTA at bottom only if it does not cover form fields.
+15. Developer Notes for HTML/CSS/JS Build
+Use semantic HTML: main, section, form, address, footer.
+Use tel: links for phone numbers and mailto: link for email.
+Add front-end validation for name, mobile number, email and message.
+Add a thank-you state after form submit. Since the site is HTML/CSS/JS only, connect the form later with Formspree, Netlify Forms, Google Sheet API, PHP handler or backend if required.
+FAQ should be built with lightweight JavaScript accordion.
+Use same header and footer component structure as other pages.
+Keep image assets optimized and avoid heavy map iframe until final if speed matters.
+16. SEO Details
+
+SEO Title | Contact Subsidy Gyaan | Gujarat & Central Government Subsidy Consultancy
+Meta Description | Contact Subsidy Gyaan by Advait Associates for Central and Gujarat Government subsidy guidance, DPR preparation, registrations, documentation, banking liaison and business advisory support.
+H1 | Contact Subsidy Gyaan
+Suggested URL | /contact.html
+Keywords | subsidy consultant Ahmedabad, Gujarat subsidy consultancy, central government subsidy consultant, MSME subsidy guidance, DPR consultant Gujarat, Subsidy Gyaan contact
+
+17. Cursor / AI Builder Prompt for Contact Page
+Create the Contact Us page for Subsidy Gyaan by Advait Associates using HTML, CSS and JavaScript only. Use a modern light-theme consulting website style inspired by premium Webflow layouts: white background, soft blue-green gradients, rounded cards, bold headings, clean spacing and subtle animations. The page must include a sticky header, contact hero with badge [Contact Subsidy Gyaan], heading 'Let us discuss your subsidy eligibility and business growth plan', description, CTA buttons, quick contact cards, two-column enquiry form and consultation panel, enquiry category cards, four-step process, Ahmedabad headquarters plus Pan-India advisory reach section, FAQ accordion, final CTA and footer. Use phone +91 8320542940 / +91 8866248393, email oswal2nisarg@gmail.com, headquarters Ahmedabad, Gujarat, and service area Across India. Keep the page responsive, fast, SEO-friendly, accessible and consistent with the rest of the Subsidy Gyaan website. Avoid dark theme, heavy animations and unnecessary clutter.
+End of Contact Page Layout Document
