@@ -1,4 +1,7 @@
 /* Subsidy Gyaan — minimal overrides (keeps Enviro template look) */
+p {
+  text-align: justify;
+}
 
 /* Text logo */
 .brand-logo-text {
@@ -2800,4 +2803,31 @@ body.loaded .fancy-preloader-content {
   width: 28px;
   height: 28px;
   fill: currentColor;
+}
+
+/* Global Premium Hover Effects for Cards & Box Components */
+.why-us-card-new,
+.home-process-step,
+.who-card,
+.sub-trust-card,
+.testimonial-card-block,
+.service-card,
+.industry-card,
+.blog-card,
+.blog-collection-item {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.why-us-card-new:hover,
+.home-process-step:hover,
+.who-card:hover,
+.sub-trust-card:hover,
+.testimonial-card-block:hover,
+.service-card:hover,
+.industry-card:hover,
+.blog-card:hover,
+.blog-collection-item:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 35px rgba(13, 139, 139, 0.08) !important;
+  border-color: #0d8b8b !important;
 }
