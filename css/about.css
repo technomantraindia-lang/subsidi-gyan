@@ -588,15 +588,28 @@
     grid-template-columns: 1fr;
   }
 
+  .about-inner-hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
   .about-inner-title {
     font-size: 2rem;
+    text-align: center !important;
   }
 
   .about-inner-tagline {
     font-size: 20px;
+    text-align: center !important;
   }
 
-  .about-inner-tagline .tagline-line--shift,
+  .about-inner-tagline .tagline-line--shift {
+    margin-left: 0 !important;
+    display: block !important;
+  }
+  
   .about-promo-tagline .tagline-line--shift {
     margin-left: 40px;
   }
