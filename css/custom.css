@@ -1563,6 +1563,8 @@ p {
   cursor: pointer !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  height: auto !important;
+  min-height: 64px !important;
 }
 
 .accordion-toggle:focus {
