@@ -2726,6 +2726,14 @@ body.loaded .fancy-preloader-content {
   animation: brandEntrance 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.3s;
 }
 
+@media screen and (max-width: 480px) {
+  .fancy-brand-text {
+    font-size: 28px !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
 .fancy-brand-sub {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
