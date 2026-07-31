@@ -1,0 +1,381 @@
+Subsidy Gyaan Homepage Layout Document
+Modern light-theme website plan for HTML, CSS and JavaScript build
+
+Brand Line
+Gyaan se Pragati, Salah se Samriddhi
+
+This document defines the full homepage structure, content placement, UI direction, visual style, section order, CTA placement, responsive behavior and development notes for the Subsidy Gyaan website.
+1. Homepage Goal
+The homepage should immediately communicate that Subsidy Gyaan by Advait Associates is a trusted advisory platform for Central Government and Gujarat Government subsidy consultancy. It should build trust, explain the services clearly, show major schemes, educate visitors, and move users toward checking eligibility or contacting the team.
+Item
+Direction
+Primary Goal
+Generate consultation enquiries from entrepreneurs, MSMEs, industrial units, micro food processors, SHGs, FPOs and growing businesses.
+Secondary Goal
+Educate visitors about subsidy categories, DPR, registrations, documentation and advisory support.
+Design Reference Mood
+Use the clean, large, modern and light-theme feel of the Enviro-style reference, but convert it into a subsidy consultancy and business advisory identity.
+Core Emotion
+Knowledge, guidance, progress and prosperity. The line "Gyaan se Pragati, Salah se Samriddhi" should be used as the emotional backbone.
+
+2. Brand and Content Foundation
+Brand Detail
+Website Usage
+Brand Name
+Subsidy Gyaan
+Parent / Byline
+by Advait Associates
+Business Category
+Comprehensive consultancy for subsidy availment
+Location
+Ahmedabad, Gujarat
+Service Area
+Across India / Pan-India advisory reach
+Established
+2011
+Client Trust
+3,500+ clients served
+Main Focus
+Central Government subsidies and Gujarat Government subsidies, with DPR, compliance, project report preparation, registrations and ecosystem support.
+Contact Details
+Phone: +91 8320542940 / +91 8866248393 | Email: oswal2nisarg@gmail.com
+
+3. Design System for Homepage
+The full site should remain in a light theme. The homepage should look trustworthy, premium, clean, readable and modern. Avoid dark-heavy sections and unnecessary complex animation.
+Element
+Guideline
+Primary Blue
+#1E73BE - use for main buttons, links, icons and trust elements.
+Deep Navy
+#14213D - use for headings and important text.
+Teal Green
+#0D8B8B - use for section labels and advisory highlights.
+Growth Green
+#82B440 - use for growth, subsidy and success highlights.
+Orange Accent
+#F28C28 - use for the brand line, CTA highlights and small labels.
+Soft Backgrounds
+#F4FAFF, #F5FBF7 and #FFF7EF for light section backgrounds.
+Typography
+Suggested: Plus Jakarta Sans / Manrope for headings and Inter / Open Sans for body.
+Card Style
+Rounded 20px to 28px cards, soft shadows, thin borders and hover lift.
+Animation
+Fade-up on scroll, soft card hover, sticky header shadow, accordion transitions and stat counters.
+
+4. Homepage Section Order
+This is the final recommended homepage order. The developer should keep this flow unless the client requests a major change.
+Header / Navigation
+Hero Section with Brand Line and Stats
+Quick Trust Strip
+About Preview Section
+Services Overview Section
+Subsidy Schemes / Central and Gujarat Split Section
+Process Section
+Industries We Support Section
+Why Businesses Trust Subsidy Gyaan Section
+Articles Preview Section
+FAQ Section
+Final CTA Section
+Footer
+
+5. Detailed Homepage Layout
+SECTION 01: Header / Navigation
+Position
+Top of the page, sticky on scroll.
+Layout
+Logo left, menu center, CTA button right.
+Menu Items
+Home, About, Services, Subsidies, Industries, Articles, Contact.
+Dropdown
+Subsidies dropdown should include Central Government Subsidies and Gujarat Government Subsidies.
+CTA Button
+Check Eligibility
+Style
+White background, soft bottom border, slight shadow after scroll. Keep menu text clean and professional.
+Mobile
+Logo left, hamburger right. Menu opens as full-height or slide-down panel with CTA at bottom.
+
+SECTION 02: Hero Section
+Section Label
+[ SUBSIDY GYAAN ]
+Brand Line
+Gyaan se Pragati, Salah se Samriddhi
+Main Title
+Expert Guidance for Central & Gujarat Government Subsidies
+Description
+Subsidy Gyaan by Advait Associates helps entrepreneurs, MSMEs, industries, micro food processors, SHGs, FPOs and growing businesses avail maximum eligible subsidy benefits through expert advisory, DPR preparation, documentation and government process support.
+Primary CTA
+Check Subsidy Eligibility
+Secondary CTA
+Explore Services
+Stats
+2011 Year Established | 3,500+ Clients Served | Pan-India Advisory Reach
+Right Visual
+Use a premium business advisory visual: consultant meeting entrepreneur, subsidy document, approval stamp, growth chart and floating scheme cards such as PMFME, MSME, DPR and Gujarat Subsidy.
+Background
+Soft white-to-blue/green gradient with subtle pattern or soft abstract shapes.
+Animation
+Headline fade-up, stat counters count up, floating cards slightly move on hover or scroll.
+Responsive
+Desktop: two columns. Mobile: content first, visual second, stats in three stacked cards.
+
+SECTION 03: Quick Trust Strip
+Purpose
+Show the key service areas quickly below the hero.
+Items
+Central Government Subsidy | Gujarat Government Subsidy | DPR Preparation | Registration Support | Banking Liaison
+Layout
+One rounded horizontal white container with 5 icon items on desktop.
+Style
+White card, light border, soft shadow, tiny blue/green icon circles.
+Mobile
+2-column grid or horizontal scroll strip.
+
+SECTION 04: About Preview Section
+Section Label
+[ About Us ]
+Main Title
+We help businesses understand subsidies, prepare documents, and move from idea to implementation with confidence.
+Content
+Subsidy Gyaan by Advait Associates is an Ahmedabad-based advisory firm offering end-to-end consultancy for Central and Gujarat Government subsidy schemes. Since 2011, the firm has supported 3,500+ clients with subsidy applications, DPR preparation, compliance guidance, registrations and ecosystem support.
+Layout
+Left side image/illustration, right side text. Or use large text left and four USP cards right.
+USP Cards
+Expertise | Process Knowledge | Proactive Approach | Reliability
+CTA
+Know More About Us
+Visual Idea
+Use a clean office-consultation or document-planning illustration, not a generic stock image.
+Mobile
+Stack image above content or content above image based on visual balance.
+
+SECTION 05: Services Overview Section
+Section Label
+[ Services ]
+Main Title
+Complete Subsidy & Business Advisory Services
+Intro Text
+From eligibility analysis to DPR, registration, compliance and government liaison, Subsidy Gyaan supports businesses through each stage of subsidy availment.
+Services
+Central Government Subsidy Advisory; Gujarat Government Subsidy Advisory; Detailed Project Report Preparation; Registration & Certification Services; Banking & Financial Liaison; Government Liaison & Follow-Up; Machinery Supplier Networking; Food Technologist & Compliance Support.
+Layout
+3-column card grid on desktop. Each card should include icon, title, 2-line description and small arrow.
+Card Style
+White cards, rounded corners, subtle border, number at top-right, blue/green icon circle. Hover: lift + light gradient background.
+CTA
+View All Services
+Mobile
+Single column cards with comfortable spacing.
+
+SECTION 06: Subsidy Schemes Split Section
+Section Label
+[ Subsidy Schemes ]
+Main Title
+Guidance for Central & Gujarat Government Subsidy Schemes
+Layout
+Two large premium cards side by side.
+Card 1 Title
+Central Government Subsidies
+Card 1 Schemes
+PMFME, NABARD / AMIGS, AIF Scheme, EPCG, APEDA, Cold Storage, Credit Linked Capital Subsidy, MOFPI and Biomass / Renewable Energy.
+Card 2 Title
+Gujarat Government Subsidies
+Card 2 Schemes
+MSME Assistance Scheme, Large / Mega / Ultra-Mega Unit Support, Textile Subsidy, Logistic Park Assistance, Electric Duty Waiver, Marketing Support, IT / Electronics / Biofuel / Biotechnology.
+CTA
+View Central Schemes and View Gujarat Schemes
+Style
+Central card in soft blue gradient. Gujarat card in soft green gradient. Use orange CTA accents.
+Mobile
+Stack the two cards vertically.
+
+SECTION 07: Featured Schemes Accordion
+Purpose
+Give visitors a quick explanation of popular schemes without making the homepage too long.
+Layout
+Left side visual block, right side accordion list.
+Accordion Items
+PMFME Scheme; Gujarat MSME Assistance Scheme; NABARD / AMIGS; AIF Scheme; Textile Industry Subsidy; Logistic Park Assistance; Biomass / Renewable Energy Subsidy.
+Each Item Content
+1 short paragraph explaining who it is useful for and what kind of benefit/support it may offer. Add a Learn More link.
+Style
+White accordion cards with teal number, title and plus/minus icon.
+Note
+Avoid showing too much percentage/detail on homepage. Put full scheme detail on inner pages.
+
+SECTION 08: Process Section
+Section Label
+[ Process ]
+Main Title
+How We Make Subsidy Availment Simple
+Intro Text
+A clear step-by-step process helps new entrepreneurs and industries understand how Subsidy Gyaan works.
+Steps
+01 Understand Your Business; 02 Check Scheme Eligibility; 03 Prepare DPR & Documents; 04 File Application; 05 Coordinate with Banks & Departments; 06 Support Until Approval.
+Layout
+Horizontal timeline on desktop with connected line. Vertical cards on mobile.
+Style
+Numbered circles with orange/blue accents. Add small icons for each step.
+Animation
+Each step fades up one by one while scrolling.
+
+SECTION 09: Industries We Support Section
+Section Label
+[ Industries ]
+Main Title
+Industries & Enterprises We Support
+Intro Text
+Subsidy Gyaan supports businesses across micro, small, medium and industrial categories with practical subsidy and compliance guidance.
+Industry Cards
+MSME Industries; Food Processing Units; Gruh Udyog; Self-Help Groups; FPOs / FPCs; Textile Units; Logistics Parks; Manufacturing Units; Export Businesses; Renewable Energy Projects.
+Layout
+5-column icon grid on desktop, 3 columns on tablet, 2 or 1 column on mobile.
+Card Style
+Rounded icon cards with light blue/green background and small arrow on hover.
+CTA
+Explore Industries
+
+SECTION 10: Why Businesses Trust Subsidy Gyaan
+Section Label
+[ Why Choose Us ]
+Main Title
+Why Businesses Trust Subsidy Gyaan
+Content Points
+Holistic Approach; Compliance-First Mindset; Knowledge Democratization; Ecosystem Access; Social Commitment.
+Layout Option
+Center circle/quote card containing "Gyaan se Pragati, Salah se Samriddhi" with trust points around it.
+Alternative Layout
+Large left text block with 5 right-side horizontal benefit cards.
+Style
+Light cream or soft blue background, premium spacing, icon badges and strong headline.
+CTA
+Talk to Our Subsidy Expert
+
+SECTION 11: Articles Preview Section
+Section Label
+[ Articles ]
+Main Title
+Subsidy Guides, Updates & Business Growth Articles
+Intro Text
+Use this section to position the website as a knowledge-sharing platform and improve SEO.
+Blog Cards
+What is PMFME Scheme?; Gujarat MSME Subsidy Guide; Documents Required for Subsidy Application.
+Card Details
+Each card should show category badge, image/illustration, title, short excerpt and Read More link.
+CTA
+View All Articles
+Mobile
+Single column cards.
+
+SECTION 12: FAQ Section
+Section Label
+[ FAQ ]
+Main Title
+Common Questions About Subsidy Guidance
+Questions
+Which businesses can apply for government subsidy? Do you provide Gujarat Government subsidy guidance? Do you help with Central Government schemes? Is DPR required for subsidy application? Do you help with registration and certification? Can new businesses also contact Subsidy Gyaan?
+Layout
+Two columns: short intro/CTA on left, accordion on right.
+Style
+Clean white accordion on soft background.
+CTA
+Still Have Questions? Contact Us
+
+SECTION 13: Final CTA Section
+Brand Line
+Gyaan se Pragati, Salah se Samriddhi
+Main Title
+Want to Know Which Subsidy Your Business Can Get?
+Description
+Share your business idea, investment plan, industry and location. Our team will guide you with suitable Central and Gujarat Government subsidy options.
+Buttons
+Book Consultation | Call Now
+Background
+Soft blue-green gradient with abstract document/growth shapes.
+Style
+Large rounded CTA block, centered content, strong button contrast.
+
+SECTION 14: Footer
+Column 1
+Logo, short description and the brand line "Gyaan se Pragati, Salah se Samriddhi".
+Column 2
+Quick Links: Home, About, Services, Industries, Articles, Contact.
+Column 3
+Subsidies: Central Government Subsidies, Gujarat Government Subsidies, PMFME, MSME, Textile, Logistics.
+Column 4
+Contact: +91 8320542940 / +91 8866248393, oswal2nisarg@gmail.com, Ahmedabad, Gujarat, Across India.
+Footer Bottom
+Copyright line, privacy/terms links and disclaimer.
+Disclaimer
+Subsidy eligibility, benefit amount, approval and disbursement depend on applicable government policy, project category, location, investment, documents and department verification.
+
+
+6. Homepage Copy Ready for Design
+Hero Copy
+[ SUBSIDY GYAAN ]
+Gyaan se Pragati, Salah se Samriddhi
+Expert Guidance for Central & Gujarat Government Subsidies
+Subsidy Gyaan by Advait Associates helps entrepreneurs, MSMEs, industries, micro food processors, SHGs, FPOs and growing businesses avail maximum eligible subsidy benefits through expert advisory, DPR preparation, documentation and government process support.
+Buttons: Check Subsidy Eligibility | Explore Services
+About Preview Copy
+We help businesses understand subsidies, prepare documents, and move from idea to implementation with confidence.
+Subsidy Gyaan is a knowledge-sharing and advisory platform focused on creating awareness about subsidy opportunities and guiding enterprises to secure maximum eligible benefits under Central and State Government schemes. The platform combines practical subsidy advisory, compliance guidance, project report preparation and ecosystem support services.
+Services Intro Copy
+From subsidy eligibility analysis to DPR preparation, registration, banking coordination and government liaison, our services are designed to support businesses through every stage of subsidy availment.
+Process Intro Copy
+We simplify the subsidy journey with a structured process that helps entrepreneurs and industries move with clarity, documentation readiness and confidence.
+Final CTA Copy
+Gyaan se Pragati, Salah se Samriddhi
+Want to Know Which Subsidy Your Business Can Get?
+Share your business idea, investment plan, industry and location. Our team will guide you with suitable Central and Gujarat Government subsidy options.
+
+7. SEO and Technical Notes for Homepage
+SEO / Technical Item
+Recommendation
+SEO Title
+Subsidy Gyaan | Central & Gujarat Government Subsidy Consultancy
+Meta Description
+Subsidy Gyaan by Advait Associates provides expert guidance for Central and Gujarat Government subsidies, DPR preparation, registrations, compliance, banking liaison and subsidy application support.
+Primary H1
+Expert Guidance for Central & Gujarat Government Subsidies
+Suggested URL
+/ or index.html
+Image Alt Text Example
+Subsidy Gyaan advisory support for government subsidy application and DPR preparation
+Performance Rule
+Use optimized WebP images, lazy-load below-fold visuals, minimize JS and keep animations lightweight.
+Accessibility Rule
+Use readable contrast, visible focus states, semantic headings, labelled form fields and keyboard-friendly accordions.
+
+8. Responsive Layout Rules
+Desktop 1200px+: keep spacious two-column hero and 3-column service cards.
+Laptop 992px-1199px: reduce hero heading size and keep cards in 3 columns or 2 columns depending on available width.
+Tablet 768px-991px: stack hero content and visual, use 2-column service/industry grids.
+Mobile under 767px: single-column layout, large tap-friendly buttons, accordion menus, no heavy animation.
+Header on mobile should use a simple hamburger menu with clear CTA.
+Keep brand line visible in hero and final CTA even on small screens.
+9. Developer Build Notes
+Build using HTML, CSS and vanilla JavaScript only.
+Use reusable CSS classes for section labels, buttons, cards, grids, CTA blocks and accordions.
+Use one main style.css and one main.js for homepage interactions.
+Use JavaScript for mobile menu, sticky header class, FAQ accordion, scheme accordion and counter animation.
+Keep the homepage modular so the same header/footer can be copied to all inner pages.
+Avoid copying the reference template exactly. Use it only for spacing, modern light theme and section rhythm inspiration.
+10. Final Homepage Checklist
+Logo and header menu added.
+Brand line visible in hero.
+Hero has clear H1, description, two CTA buttons and three stats.
+Trust strip appears below hero.
+About section includes USP points.
+Services grid includes all core services.
+Central and Gujarat subsidy categories are clearly separated.
+Process section explains how the consultancy works.
+Industries section shows target audience clearly.
+Why Choose section uses trust points from brochure.
+Articles preview added for blog page connection.
+FAQ accordion included.
+Final CTA and footer include contact details and disclaimer.
+Responsive design checked for mobile, tablet and desktop.
+Source Note
+Homepage content is based on the Subsidy Gyaan service profile brochure provided for the project. Scheme details should be verified before publishing if exact benefit amounts or policy dates are shown publicly.

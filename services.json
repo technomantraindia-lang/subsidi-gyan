@@ -3,7 +3,7 @@
     "id": "advisory",
     "title": "Government Subsidy Advisory",
     "tagline": "End-to-end guidance for Central and Gujarat State Government subsidy schemes to maximize capital & interest incentives.",
-    "image": "assets/gujratgovsubsidy.png",
+    "image": "assets/govt-subsidy-advisory.png",
     "introduction": "Navigating government subsidy policies can be overwhelming due to complex eligibility parameters, location rules, investment thresholds, and department documentation requirements. At Subsidy Gyaan, we provide dedicated subsidy advisory services for entrepreneurs, MSMEs, large industrial units, and agricultural enterprises.",
     "importance": "Without expert advisory, businesses risk missing out on substantial capital grants, interest subventions, and power tariff waivers. Our team evaluates your project parameters against active policies (such as PMFME, AIF, NABARD, and Viksit Gujarat Industrial Policy) to design a strategic subsidy roadmap that ensures seamless application and maximum financial benefit.",
     "offerings": [
@@ -237,7 +237,7 @@
     "id": "compliance",
     "title": "Food Technologist & Compliance Support",
     "tagline": "Technical compliance, FSSAI standards, and product quality guidance for food processing and industrial units.",
-    "image": "assets/Services/Food%20Technologist%20%26%20Compliance%20Support.png",
+    "image": "assets/Services/compliance-support.png",
     "introduction": "Food processing enterprises and manufacturing units must adhere to strict regulatory standards, hygiene protocols, product testing guidelines, and government safety norms. At Subsidy Gyaan, we offer expert food technology and statutory compliance assistance to ensure your unit meets all legal requirements smoothly.",
     "importance": "Non-compliance with FSSAI regulations, pollution control norms, or factory standards can lead to operational shutdowns, penalties, and disqualification from government subsidy programs like PMFME or MOFPI. Our compliance team provides hands-on technical guidance, product recipe standardization, and lab testing assistance to safeguard your enterprise.",
     "offerings": [
@@ -276,7 +276,7 @@
     "id": "mentorship",
     "title": "Entrepreneurship Development & Startup Mentorship",
     "tagline": "Turn your business idea into a successful enterprise with strategic guidance, financial planning, and continuous mentorship.",
-    "image": "assets/subsidies.png",
+    "image": "assets/mentorship-service.png",
     "introduction": "Starting a business involves much more than registering a company or investing capital. Entrepreneurs need strategic guidance, financial planning, government support, compliance knowledge, and continuous mentorship to build a sustainable and profitable business. At Subsidy Gyaan, we mentor aspiring entrepreneurs, startups, MSMEs, and business owners by providing practical guidance from the idea stage to successful business establishment and growth.",
     "importance": "Whether you are launching your first venture or expanding an existing business, our experienced advisors help you make informed decisions, minimize risks, and maximize growth opportunities. With our end-to-end mentorship, you gain clarity on market viability, funding avenues, government schemes, and legal compliance.",
     "offerings": [
@@ -321,45 +321,6 @@
       "Proven track record of mentoring 3,500+ MSMEs and entrepreneurs across India.",
       "End-to-end assistance covering legal, financial, banking, and government liaison.",
       "Focus on risk reduction and maximizing government incentives."
-    ]
-  },
-  {
-    "id": "logistics",
-    "title": "Logistics & Warehousing Advisory",
-    "tagline": "Strategic guidance to secure government incentives for logistics parks, cold chains, and modern warehouses.",
-    "image": "assets/logi.png",
-    "introduction": "The logistics and warehousing sector is the backbone of commerce and trade. The government offers attractive capital subsidies, interest subventions, and infrastructure incentives for setting up logistics parks, cold storage, industrial housing, and state-of-the-art warehouses under central and state policies.",
-    "importance": "Developing modern logistics infrastructure involves high capital expenditure. By leveraging government schemes such as the Gujarat Logistics Policy and Central Infrastructure Incentives, developers and logistics operator companies can significantly offset setup costs, improve cash flow, and ensure long-term operational profitability.",
-    "offerings": [
-      {
-        "title": "Logistics Park Incentives",
-        "description": "Assistance in availing capital subsidy, interest subvention, and stamp duty concessions for state-approved logistics parks."
-      },
-      {
-        "title": "Cold Chain & Storage Grants",
-        "description": "Advisory on MOFPI and NHB subsidy schemes for setting up temperature-controlled warehouses and cold chains."
-      },
-      {
-        "title": "Warehouse Infrastructure Setup",
-        "description": "Guidance on structure, safety, and compliance parameters required to qualify for warehouse subsidy schemes."
-      },
-      {
-        "title": "Policy Compliance & Approvals",
-        "description": "Ensuring your project satisfies the minimal land requirements, approach road widths, and zoning approvals needed for subsidy validation."
-      }
-    ],
-    "process": [
-      "Feasibility study and land location eligibility mapping against logistics policy rules.",
-      "Determining total eligible capital expenditure and potential subsidy yields.",
-      "Designing structural and project timelines to align with term loan approvals.",
-      "Preparing government-compliant Detailed Project Reports (DPR).",
-      "Managing online submissions, department queries, and site inspections until final fund release."
-    ],
-    "whyChooseUs": [
-      "In-depth understanding of national and state logistics park guidelines.",
-      "Successful record of facilitating credit syndication and subsidy setup for large infrastructure projects.",
-      "Active coordination with industrial development corporations and DIC offices.",
-      "End-to-end guidance from structural planning to final fund disbursement."
     ]
   }
 ]
