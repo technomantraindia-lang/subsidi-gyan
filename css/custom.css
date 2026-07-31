@@ -375,16 +375,22 @@ p {
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
-  font-size: clamp(60px, 12vw, 150px);
+  font-size: clamp(30px, 10vw, 150px);
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: clamp(2px, 0.5vw, 6px);
   color: rgba(12, 43, 33, 0.04);
   -webkit-text-stroke: 1.5px rgba(0, 181, 98, 0.12);
   white-space: nowrap;
   pointer-events: none;
   z-index: 0;
   user-select: none;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-bg-watermark {
+    top: 50px !important;
+  }
 }
 
 /* Hero Content Styles */
