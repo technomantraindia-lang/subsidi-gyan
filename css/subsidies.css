@@ -7,6 +7,7 @@
 
 .sub-accordion-item.w--open .sub-accordion-body.w-dropdown-list {
   display: block !important;
+  max-height: none !important;
 }
 
 .sub-hero .about-inner-hero-visual {
@@ -477,6 +478,10 @@
 .sub-logistic-section {
   padding: 80px 0;
   background: #f8f9fb;
+}
+
+.sub-logistic-section .section-heading {
+  margin-bottom: 20px !important;
 }
 
 .sub-logistic-grid {

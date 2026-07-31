@@ -558,6 +558,7 @@
     grid-template-columns: 1fr;
   }
 
+  .main .counter-main-block.about-stats-grid,
   .about-stats-grid {
     grid-template-columns: 1fr !important;
   }
@@ -616,6 +617,71 @@
 
   .about-knowledge-card {
     padding: 28px 20px;
+  }
+
+  .about-stat-card {
+    text-align: center !important;
+  }
+
+  .about-stat-sub {
+    text-align: center !important;
+  }
+
+  .about-intro-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .about-intro-content h2 {
+    text-align: center !important;
+  }
+
+  .about-intro-content div {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .why-choose-card {
+    height: auto !important;
+    min-height: 240px !important;
+    padding: 30px 24px !important;
+  }
+
+  .about-purpose-left {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .about-purpose-left .section-heading {
+    text-align: center !important;
+  }
+
+  .about-purpose-left .about-text {
+    text-align: justify !important;
+  }
+
+  .about-trust-left {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .about-trust-left .section-heading {
+    text-align: center !important;
+  }
+
+  .about-trust-left .about-trust-tagline {
+    text-align: center !important;
+  }
+
+  .about-trust-left .about-trust-tagline .tagline-line--shift {
+    margin-left: 0 !important;
+    display: block !important;
   }
 }
 

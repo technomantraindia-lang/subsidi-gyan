@@ -222,6 +222,10 @@
   padding-bottom: 50px;
 }
 
+.svc-dpr-section .section-heading {
+  margin-bottom: 20px !important;
+}
+
 .svc-dpr-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -336,6 +340,10 @@
 .svc-network-section {
   padding: 80px 0;
   background: #f8f9fb;
+}
+
+.svc-network-section .section-heading {
+  margin-bottom: 20px !important;
 }
 
 .svc-network-grid {
