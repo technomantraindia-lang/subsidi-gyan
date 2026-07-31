@@ -2837,3 +2837,11 @@ body.loaded .fancy-preloader-content {
   box-shadow: 0 16px 35px rgba(13, 139, 139, 0.08) !important;
   border-color: #0d8b8b !important;
 }
+
+/* Mobile FAQ Alignment Fix */
+@media screen and (max-width: 767px) {
+  .accordion-tittle,
+  .accordion-text {
+    text-align: center !important;
+  }
+}
